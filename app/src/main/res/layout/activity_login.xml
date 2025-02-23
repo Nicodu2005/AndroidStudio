@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+
+    <EditText
+        android:id="@+id/input_Login"
+        style="@style/EditTextRounded"
+        android:layout_width="209dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Ingresa su correo"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toEndOf="@+id/img_login_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/textSloganLogin" />
+
+    <EditText
+        android:id="@+id/input_password"
+        style="@style/EditTextRounded"
+        android:layout_width="209dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:hint="Ingresa su contraseña"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/img_login_password"
+        app:layout_constraintTop_toBottomOf="@+id/textSloganLogin"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <Button
+        android:id="@+id/button_ingoogle"
+        style="@style/editbotonGoogle"
+        android:layout_width="236dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/boton_IngresoGoogle"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:icon="@drawable/google"
+        app:iconSize="30dp"
+        app:iconTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RecuperarC" />
+
+    <ImageView
+        android:id="@+id/img_login_usuario"
+        android:layout_width="76dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.351"
+        app:srcCompat="@drawable/usuario" />
+
+    <ImageView
+        android:id="@+id/img_login_password"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/password" />
+
+    <ImageView
+        android:id="@+id/logo_Login"
+        android:layout_width="113dp"
+        android:layout_height="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/nombre_app_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bowlby_one"
+        android:text="@string/nombre_App"
+        android:textColor="@color/red"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076"
+        tools:text="@string/nombre_App" />
+
+    <TextView
+        android:id="@+id/textSloganLogin"
+        android:layout_width="239dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/antic_didone"
+        android:paddingLeft="20dp"
+        android:text="@string/text_sloganInicio"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.622"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_app_Login"
+        app:layout_constraintVertical_bias="0.005"
+        tools:text="@string/text_sloganInicio" />
+
+    <TextView
+        android:id="@+id/text_cuenta_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_Cuenta"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/antic_didone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_ingoogle"
+        app:layout_constraintVertical_bias="0.369"
+        tools:text="@string/texto_Cuenta" />
+
+    <TextView
+        android:id="@+id/registrate_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/antic_didone"
+        android:text="@string/texto_registro"
+        android:textColor="@color/red"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toEndOf="@+id/text_cuenta_login"
+        app:layout_constraintTop_toBottomOf="@+id/button_ingoogle"
+        app:layout_constraintVertical_bias="0.369"
+        tools:text="@string/texto_registro" />
+
+    <Button
+        android:id="@+id/btn_ingresar_login"
+        style="@style/edit_iniciar"
+        android:layout_width="219dp"
+        android:layout_height="58dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/Boton_IniciarSecion"
+        android:textSize="30sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.673"
+        tools:text="@string/Boton_IniciarSecion" />
+
+    <TextView
+        android:id="@+id/RecuperarC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/boton_recuperarContraseña"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/antic_didone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ingresar_login"
+        tools:text="@string/boton_recuperarContraseña" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

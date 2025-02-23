@@ -1,0 +1,13 @@
+<resources>
+    <string name="slogan_App">Inicia una nueva aventura con AudioPod y descubre una nueva forma de ver el mundo</string>
+    <string name="nombre_App">audioPod</string>
+    <string name="boton_Inicio">Comienza</string>
+    <string name="texto_registro">Registrate</string>
+    <string name="text_sloganInicio">La aventura esta por iniciar, por favor inicia sesion</string>
+    <string name="Boton_IniciarSecion">Ingresar</string>
+    <string name="boton_recuperarContraseña">Recupera tu contraseña</string>
+    <string name="boton_IngresoGoogle">Ingresa con Google</string>
+    <string name="texto_Cuenta">No tienes cuenta?</string>
+    <string name="text_nombre">Nicolas Duran Poveda</string>
+
+</resources>
