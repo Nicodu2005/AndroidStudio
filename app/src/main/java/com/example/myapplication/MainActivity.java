@@ -1,4 +1,4 @@
-package com.example.myapplication;
+/*package com.example.myapplication;
 
 import android.os.Bundle;
 
@@ -22,3 +22,5 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 }
+
+*/
