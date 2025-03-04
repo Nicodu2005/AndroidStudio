@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <ImageView
+            android:id="@+id/img_usuario_perfil"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/usuario" />
+
+
+
+        <TextView
+            android:id="@+id/text_nombres_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_nombre_Registro"
+            android:textColor="@color/red"
+            android:layout_marginTop="30sp"
+            android:fontFamily="@font/bowlby_one"/>
+        <TextView
+            android:id="@+id/nombres_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="nombreUser"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20sp"
+            android:fontFamily="@font/roboto_medium"/>
+
+        <TextView
+            android:id="@+id/text_apellidos_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_apellido_Registro"
+            android:textColor="@color/red"
+            android:layout_marginTop="20sp"
+            android:fontFamily="@font/bowlby_one"/>
+        <TextView
+            android:id="@+id/apellido_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellido user"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20sp"
+            android:fontFamily="@font/roboto_medium"/>
+        <TextView
+            android:id="@+id/text_correo_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_correo_Registro"
+            android:textColor="@color/red"
+            android:layout_marginTop="20sp"
+            android:fontFamily="@font/bowlby_one"/>
+        <TextView
+            android:id="@+id/correo_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo User"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20sp"
+            android:fontFamily="@font/roboto_medium"/>
+
+        <TextView
+            android:id="@+id/text_telefono_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_telefono_Registro"
+            android:textColor="@color/red"
+            android:layout_marginTop="20sp"
+            android:fontFamily="@font/bowlby_one"/>
+        <TextView
+            android:id="@+id/telefono_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="telefono User"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20sp"
+            android:fontFamily="@font/roboto_medium"/>
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/edit_iniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_Editar_Perfil"
+            android:layout_marginBottom="20sp"
+            android:fontFamily="@font/roboto_medium"
+            app:backgroundTint="@null"/>
+    </LinearLayout>
+</ScrollView>
+

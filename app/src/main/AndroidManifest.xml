@@ -13,7 +13,7 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +21,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".HomeActivity"
+            android:exported="true">
+        </activity>
+
+      <activity android:name=".RegistrarseActivity"
+            android:exported="false">
+        </activity>
+        <activity android:name=".LoginActivity"
+            android:exported="false">
+        </activity>
+
+        <activity android:name=".RcontrasenaActivity"
+            android:exported="false">
+        </activity>
+        <activity android:name=".PerfilActivity"
+            android:exported="false">
+        </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center"
+        >
+
+
+        <ImageView
+            android:layout_marginTop="20sp"
+            android:id="@+id/img_registro"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo"
+            tools:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/nombre_app_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_App_registro"
+            android:textSize="20sp"
+            android:fontFamily="@font/bowlby_one"
+            android:textColor="@color/red"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/texto_nombre_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_nombre_Registro"
+            android:textSize="20sp"
+            android:fontFamily="@font/bowlby_one"
+            android:textColor="@color/red"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/nombre_registro"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="40"
+            android:hint="@string/text_nombre_Registro"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/text_apellidos_registo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_apellido_Registro"
+            android:fontFamily="@font/bowlby_one"
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/apellidos_registro"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/text_apellido_Registro"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/text_correo_registo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_correo_Registro"
+            android:fontFamily="@font/bowlby_one"
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/correo_registro"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/text_correo_Registro"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/text_Telefono_registo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_telefono_Registro"
+            android:fontFamily="@font/bowlby_one"
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/telefono_registro"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/text_telefono_Registro"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/text_contrasena_registo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_contrasena_Registro"
+            android:fontFamily="@font/bowlby_one"
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/contrasena_registro"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/text_contrasena_Registro"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/text_repcontra_registo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_concontrasena_Registro"
+            android:fontFamily="@font/bowlby_one"
+            android:textColor="@color/red"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/repContra_registro"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/text_concontrasena_Registro"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+        <CheckBox
+            android:id="@+id/TyC_regitro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="@string/text_TyC"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_marginTop="10sp"
+            android:id="@+id/btn_registrarse"
+            style="@style/edit_iniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_registro"
+            app:backgroundTint="@null"/>
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+

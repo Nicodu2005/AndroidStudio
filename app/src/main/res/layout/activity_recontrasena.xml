@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/img_recontrasena"
+            android:layout_width="323dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="20sp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logo"
+            tools:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/nombreapp_recontrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5sp"
+            android:fontFamily="@font/bowlby_one"
+            android:text="@string/nombre_App"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/recontrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/bowlby_one"
+            android:text="@string/boton_recuperarContraseña"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_recontrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/text_recontra"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/text_recontrasena_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/bowlby_one"
+            android:text="introduzca su correo electronico"
+            android:textColor="@color/red"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/recontrasena_correo"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="40"
+            android:hint="Introduzca correo electronico"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:layout_marginTop="50sp"
+            android:id="@+id/btn_continuar_rec"
+            style="@style/edit_iniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_continuarRec"
+            app:backgroundTint="@null"/>
+
+
+    </LinearLayout>
+    </ScrollView>

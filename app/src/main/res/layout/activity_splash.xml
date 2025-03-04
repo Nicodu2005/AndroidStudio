@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
 
     <ImageView
         android:id="@+id/img_view_splash"
         android:layout_width="267dp"
         android:layout_height="306dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.251"
+        android:layout_marginTop="80sp"
+        android:layout_marginStart="30sp"
         app:srcCompat="@drawable/logo" />
 
     <TextView
@@ -26,13 +28,10 @@
         android:fontFamily="@font/bowlby_one"
         android:text="@string/nombre_App"
         android:textColor="@color/red"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.953"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/img_view_splash"
-        app:layout_constraintVertical_bias="0.151" />
+        android:textSize="35sp"
+        android:layout_marginStart="60sp"
+        android:layout_marginTop="40sp"
+        />
 
     <TextView
         android:id="@+id/text_nombre_splash"
@@ -43,16 +42,9 @@
         android:text="@string/text_nombre"
         android:textColor="@color/red"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.882"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_app_splash" />
+        android:layout_marginVertical="90sp"
+        android:layout_marginStart="230sp"
+        />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>
