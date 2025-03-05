@@ -88,7 +88,7 @@ class RegistrarseActivity : AppCompatActivity () {
             Toast.makeText(this, "el campo es contraseña requerido", Toast.LENGTH_LONG).show()
             return false
         }else if (contrasena != recontrasena){
-            Toast.makeText(this, "la contraseña es difetente", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "la contraseña es diferente", Toast.LENGTH_LONG).show()
             return false
         }else if(!TeryCond){
             Toast.makeText(this, "Debe aceptar los términos y condiciones", Toast.LENGTH_LONG).show()

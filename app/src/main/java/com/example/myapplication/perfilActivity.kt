@@ -11,7 +11,6 @@ class PerfilActivity : AppCompatActivity (){
     private lateinit var getTextApellido: String
     private lateinit var getTextTelefono: String
     private lateinit var getTextCorreo: String
-
     private lateinit var TextNombres: TextView
     private lateinit var TextApellido: TextView
     private lateinit var TextCorreo: TextView
