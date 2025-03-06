@@ -2,6 +2,7 @@ package com.example.myapplication
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -41,6 +42,31 @@ class HomeActivity : AppCompatActivity (){
         finish()
     }
 
+
+    override fun onStart() {
+        super.onStart()
+        Log.d("Activity home", "esta en estado on start")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("Activity home", "esta en estado onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("Activity home", "esta en estado onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("Activity home", "esta en estado onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("Activity home", "esta en estado onDestroy")
+    }
 }
 
 

@@ -110,4 +110,29 @@ class RegistrarseActivity : AppCompatActivity () {
         Toast.makeText(this,"registro exitoso", Toast.LENGTH_LONG).show()
 
     }
+    override fun onStart() {
+        super.onStart()
+        Log.d("Activity registrar", "esta en estado on start")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("Activity registrar", "esta en estado onResume")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("Activity registrar", "esta en estado onPause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("Activity registrar", "esta en estado onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d("Activity registrar", "esta en estado onDestroy")
+
+    }
 }
