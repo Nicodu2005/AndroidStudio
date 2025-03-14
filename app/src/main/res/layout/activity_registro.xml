@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray">
+    android:background="@color/violeta">
 
 
     <LinearLayout
@@ -32,7 +32,7 @@
             android:text="@string/nombre_App_registro"
             android:textSize="20sp"
             android:fontFamily="@font/bowlby_one"
-            android:textColor="@color/red"
+            android:textColor="@color/blanco"
             android:textAlignment="center"
             android:layout_marginTop="10dp"/>
 
@@ -43,7 +43,7 @@
             android:text="@string/text_nombre_Registro"
             android:textSize="20sp"
             android:fontFamily="@font/bowlby_one"
-            android:textColor="@color/red"
+            android:textColor="@color/blanco"
             android:layout_marginTop="10dp"/>
 
         <EditText
@@ -53,7 +53,7 @@
             android:layout_height="48dp"
             android:ems="40"
             android:hint="@string/text_nombre_Registro"
-            android:textColor="@color/black"
+            android:textColor="@color/negro"
             android:inputType="text"
             android:textSize="15sp"
             android:layout_marginTop="5dp"/>
@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"
             android:text="@string/text_apellido_Registro"
             android:fontFamily="@font/bowlby_one"
-            android:textColor="@color/red"
+            android:textColor="@color/blanco"
             android:layout_marginTop="20dp"
             android:textSize="20sp" />
         <EditText
@@ -74,7 +74,7 @@
             android:layout_height="48dp"
             android:ems="10"
             android:hint="@string/text_apellido_Registro"
-            android:textColor="@color/black"
+            android:textColor="@color/negro"
             android:inputType="text"
             android:textSize="15sp"
             android:layout_marginTop="5dp"/>
@@ -85,7 +85,7 @@
             android:layout_height="wrap_content"
             android:text="@string/text_correo_Registro"
             android:fontFamily="@font/bowlby_one"
-            android:textColor="@color/red"
+            android:textColor="@color/blanco"
             android:layout_marginTop="20dp"
             android:textSize="20sp" />
         <EditText
@@ -95,7 +95,7 @@
             android:layout_height="48dp"
             android:ems="10"
             android:hint="@string/text_correo_Registro"
-            android:textColor="@color/black"
+            android:textColor="@color/negro"
             android:inputType="textEmailAddress"
             android:textSize="15sp"
             android:layout_marginTop="5dp"/>
@@ -106,7 +106,7 @@
             android:layout_height="wrap_content"
             android:text="@string/text_telefono_Registro"
             android:fontFamily="@font/bowlby_one"
-            android:textColor="@color/red"
+            android:textColor="@color/blanco"
             android:layout_marginTop="20dp"
             android:textSize="20sp" />
         <EditText
@@ -116,7 +116,7 @@
             android:layout_height="48dp"
             android:ems="10"
             android:hint="@string/text_telefono_Registro"
-            android:textColor="@color/black"
+            android:textColor="@color/negro"
             android:inputType="phone"
             android:textSize="15sp"
             android:layout_marginTop="5dp"/>
@@ -127,7 +127,7 @@
             android:layout_height="wrap_content"
             android:text="@string/text_contrasena_Registro"
             android:fontFamily="@font/bowlby_one"
-            android:textColor="@color/red"
+            android:textColor="@color/blanco"
             android:layout_marginTop="20dp"
             android:textSize="20sp" />
         <EditText
@@ -137,7 +137,7 @@
             android:layout_height="48dp"
             android:ems="10"
             android:hint="@string/text_contrasena_Registro"
-            android:textColor="@color/black"
+            android:textColor="@color/negro"
             android:inputType="textPassword"
             android:textSize="15sp"
             android:layout_marginTop="5dp"/>
@@ -148,7 +148,7 @@
             android:layout_height="wrap_content"
             android:text="@string/text_concontrasena_Registro"
             android:fontFamily="@font/bowlby_one"
-            android:textColor="@color/red"
+            android:textColor="@color/blanco"
             android:layout_marginTop="20dp"
             android:textSize="20sp" />
         <EditText
@@ -158,7 +158,7 @@
             android:layout_height="48dp"
             android:ems="10"
             android:hint="@string/text_concontrasena_Registro"
-            android:textColor="@color/black"
+            android:textColor="@color/negro"
             android:inputType="textPassword"
             android:textSize="15sp"
             android:layout_marginTop="5dp"/>
@@ -169,7 +169,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10sp"
             android:text="@string/text_TyC"
-            android:textColor="@color/black"
+            android:textColor="@color/negro"
             android:textSize="20sp" />
 
         <Button

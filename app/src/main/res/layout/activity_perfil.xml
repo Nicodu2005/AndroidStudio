@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray">
+    android:background="@color/violeta">
 
 
     <LinearLayout
@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_nombre_Registro"
-            android:textColor="@color/red"
+            android:textColor="@color/blanco"
             android:layout_marginTop="30sp"
             android:fontFamily="@font/bowlby_one"/>
 
@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="nombreUser"
-            android:textColor="@color/black"
+            android:textColor="@color/blanco"
             android:layout_marginBottom="20sp"
             android:fontFamily="@font/roboto_medium"/>
 
@@ -46,7 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_apellido_Registro"
-            android:textColor="@color/red"
+            android:textColor="@color/blanco"
             android:layout_marginTop="20sp"
             android:fontFamily="@font/bowlby_one"/>
         <TextView
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Apellido user"
-            android:textColor="@color/black"
+            android:textColor="@color/blanco"
             android:layout_marginBottom="20sp"
             android:fontFamily="@font/roboto_medium"/>
         <TextView
@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_correo_Registro"
-            android:textColor="@color/red"
+            android:textColor="@color/blanco"
             android:layout_marginTop="20sp"
             android:fontFamily="@font/bowlby_one"/>
         <TextView
@@ -70,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Correo User"
-            android:textColor="@color/black"
+            android:textColor="@color/blanco"
             android:layout_marginBottom="20sp"
             android:fontFamily="@font/roboto_medium"/>
 
@@ -79,7 +79,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_telefono_Registro"
-            android:textColor="@color/red"
+            android:textColor="@color/blanco"
             android:layout_marginTop="20sp"
             android:fontFamily="@font/bowlby_one"/>
         <TextView
@@ -87,7 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="telefono User"
-            android:textColor="@color/black"
+            android:textColor="@color/blanco"
             android:layout_marginBottom="20sp"
             android:fontFamily="@font/roboto_medium"/>
 

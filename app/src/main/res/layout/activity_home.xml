@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray">
+    android:background="@color/violeta">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/bowlby_one"
         android:text="@string/nombre_App"
-        android:textColor="@color/red"
+        android:textColor="@color/blanco"
         android:textSize="40sp"
         android:layout_marginStart="55sp"
         android:layout_marginTop="20sp"/>
@@ -37,7 +37,7 @@
         android:fontFamily="@font/antic_didone"
         android:text="@string/slogan_App"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/blanco"
         android:textSize="25sp"
         android:layout_marginStart="0sp"
         android:layout_marginTop="20sp"/>
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/antic_didone"
         android:text="@string/texto_registro"
-        android:textColor="@color/red"
+        android:textColor="@color/blanco"
         android:textSize="25sp"
         android:layout_marginStart="100sp"
         android:layout_marginTop="50sp"/>
