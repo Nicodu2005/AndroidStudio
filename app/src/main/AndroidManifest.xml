@@ -13,7 +13,7 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".datosActivity"
+            android:name=".activities.datosActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,21 +22,21 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".HomeActivity"
+        <activity android:name=".activities.HomeActivity"
             android:exported="true">
         </activity>
 
-      <activity android:name=".RegistrarseActivity"
+      <activity android:name=".activities.RegistrarseActivity"
             android:exported="false">
         </activity>
-        <activity android:name=".LoginActivity"
+        <activity android:name=".activities.LoginActivity"
             android:exported="false">
         </activity>
 
-        <activity android:name=".RcontrasenaActivity"
+        <activity android:name=".activities.RcontrasenaActivity"
             android:exported="false">
         </activity>
-        <activity android:name=".PerfilActivity"
+        <activity android:name=".activities.PerfilActivity"
             android:exported="false">
         </activity>
 

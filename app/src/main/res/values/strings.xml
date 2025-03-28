@@ -23,5 +23,12 @@
 
 
     <string name="text_recontra">Introduzca su correo electronico para recibir las intrucciones de recuperar contraseña</string>
+    <string name="welcome_drawer_header">welcome</string>
+    <string name="productosMenu">productos</string>
+    <string name="inicioMenu">inicio</string>
+    <string name="pantalla_de_inicio_fragmentInicio">pantalla de inicio</string>
+    <string name="pantalla_de_productos_fragmenProductos">pantalla de productos</string>
+    <string name="navigation_drawer_open">abrir\n</string>
+    <string name="navigation_drawer_close">Cerrar\n</string>
 
 </resources>
