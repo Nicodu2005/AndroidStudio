@@ -103,6 +103,7 @@
         <Button
             android:id="@+id/btn_ingresar_login"
             style="@style/edit_iniciar"
+            android:layout_marginTop="30sp"
             android:layout_width="207dp"
             android:layout_height="58dp"
             android:fontFamily="@font/roboto_medium"

@@ -12,64 +12,196 @@
         android:orientation="vertical">
 
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="284dp"
+            android:layout_height="190dp"
+            android:layout_marginStart="40sp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85sp"
+            android:layout_marginBottom="40sp"
+            android:fontFamily="@font/antic_didone"
+            android:text="Calcular viaje "
+            android:textColor="@color/blanco"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:fontFamily="@font/antic_didone"
+            android:text="Indique el destino"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
         <EditText
             android:id="@+id/input_destino"
             style="@style/EditTextRounded"
-            android:layout_width="209dp"
+            android:layout_width="309dp"
             android:layout_height="61dp"
+            android:layout_marginStart="30sp"
+            android:layout_marginBottom="20sp"
             android:ems="10"
             android:hint="destinos"
             android:textColor="@color/negro"
-            android:textSize="20sp"
-            android:layout_margin="30sp"
-            />
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textdias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:fontFamily="@font/antic_didone"
+            android:text="indique la cantidad de dias"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
         <EditText
             android:id="@+id/input_dias"
             style="@style/EditTextRounded"
-            android:layout_width="209dp"
+            android:layout_width="309dp"
             android:layout_height="61dp"
+            android:layout_marginStart="30sp"
+            android:layout_marginBottom="20sp"
             android:ems="10"
+            android:inputType="number"
             android:hint="dias"
             android:textColor="@color/negro"
-            android:textSize="20sp"
-            android:layout_margin="30sp"
-            />
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textpersonas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:fontFamily="@font/antic_didone"
+            android:text="indique el numero de personas"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
         <EditText
             android:id="@+id/input_personas"
             style="@style/EditTextRounded"
-            android:layout_width="209dp"
+            android:layout_width="309dp"
             android:layout_height="61dp"
+            android:layout_marginStart="30sp"
+            android:layout_marginBottom="20sp"
             android:ems="10"
-            android:inputType="number"
             android:hint="numero de personas"
+            android:inputType="number"
             android:textColor="@color/negro"
-            android:textSize="20sp"
-            android:layout_margin="30sp"
+            android:textSize="20sp" />
 
-            />
+        <TextView
+            android:id="@+id/textCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:fontFamily="@font/antic_didone"
+            android:text="indique si es economica, estandar, premium"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
         <EditText
             android:id="@+id/input_categoria"
             style="@style/EditTextRounded"
-            android:layout_width="209dp"
+            android:layout_width="309dp"
             android:layout_height="61dp"
+            android:layout_marginStart="30sp"
+            android:layout_marginBottom="20sp"
             android:ems="10"
-            android:hint="Categoria de plan"
+            android:hint="digite categoria"
             android:textColor="@color/negro"
-            android:textSize="20sp"
-            android:layout_margin="30sp"
-            />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/logo" />
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/button_calcular"
+            style="@style/edit_iniciar"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:layout_marginBottom="20sp"
+            android:layout_marginStart="90sp"
+            android:text="calcular"
+            android:textColor="@color/blanco"
+            app:backgroundTint="@null" />
+
+        <TextView
+            android:id="@+id/textTituloResultados"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:layout_marginStart="85sp"
+            android:layout_marginBottom="40sp"
+            android:fontFamily="@font/antic_didone"
+            android:text="RESULTADOS "
+            android:textColor="@color/blanco"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/TextCostoHospedaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:fontFamily="@font/antic_didone"
+            android:text="costo del hospedaje"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/costoHospedaje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginBottom="15sp"
+            android:text="0"
+            android:textColor="@color/blanco" />
+
+
+        <TextView
+            android:id="@+id/TextcostoAlimentacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:fontFamily="@font/antic_didone"
+            android:text="el costo aproximado de activades y alimentación"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/costoTransporte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginBottom="15sp"
+            android:text="0"
+            android:textColor="@color/blanco" />
+
+        <TextView
+            android:id="@+id/textcostoActividades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:fontFamily="@font/antic_didone"
+            android:text="costo aproximado de hospedaje"
+            android:textColor="@color/blanco"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/costoActividades"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30sp"
+            android:layout_marginBottom="15sp"
+            android:text="0"
+            android:textColor="@color/blanco" />
+
+
     </LinearLayout>
 
 

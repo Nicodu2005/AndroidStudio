@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    android:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.myapplication.fragments.InicioFragment"
+        app:defaulNavHost="true"
+        android:label="@string/inicioMenu"/>
+
+    <fragment
+        android:id="@+id/productosFragment"
+        android:name="com.example.myapplication.fragments.ProductosFragment"
+        app:defaulNavHost="true"
+        android:label="@string/productosMenu"/>
+
+
+
+</navigation>
