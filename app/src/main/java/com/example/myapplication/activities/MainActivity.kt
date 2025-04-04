@@ -1,5 +1,6 @@
 package com.example.myapplication.activities
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,8 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.example.myapplication.R
 import com.google.android.material.navigation.NavigationView
 
@@ -20,6 +23,7 @@ class MainActivity: AppCompatActivity() {
     private lateinit var drawerToogle: ActionBarDrawerToggle
 
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -42,9 +46,22 @@ class MainActivity: AppCompatActivity() {
         )
         drawerLayout.addDrawerListener(drawerToogle)
         drawerToogle.syncState()
+    appBarConfiguration = AppBarConfiguration(
+        setOf(
+            R.id.inicioFragment,
+            R.id.productosFragment,
+            R.id.perfilFragment,
+            R.id.categoriasFragment,
+            R.id.carritoFragment,
+        ),
+        drawerLayout
+    )
 
+        setupActionBarWithNavController(navController,appBarConfiguration)
+        navView.setupWithNavController(navController)
+    }
 
-
-
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp() || super.onSupportNavigateUp()
     }
 }

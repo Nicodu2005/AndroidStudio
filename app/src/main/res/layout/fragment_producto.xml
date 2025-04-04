@@ -1,15 +1,304 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
-    <TextView
+    android:background="@color/violeta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            style="@style/edit_carrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20sp">
+         <ImageView
+
+            android:id="@+id/imgbalon_Product"
+            android:layout_width="145dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/deportes"
+            android:layout_margin="10sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        <TextView
+            android:id="@+id/titulobalon_products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Stringproducto"
+            android:textColor="@color/blanco"
+            android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/descripbalon_products"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/DesBalon_productFrag"
+                android:textColor="@color/blanco"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/precioBalon_Products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/violeta"
+                    android:textSize="20sp"
+                    android:text="@string/precio_productos"
+                    android:layout_marginRight="20sp"/>
+                <TextView
+                    android:id="@+id/valorbalon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/violeta"
+                    android:text="@string/precioBalon_Products"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        style="@style/edit_carrito"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/pantalla_de_productos_fragmenProductos"
-        android:textSize="30sp">
+        android:orientation="horizontal"
+        android:layout_marginBottom="20sp">
 
-    </TextView>
+        <ImageView
+            android:id="@+id/imgropa_Product"
+            android:layout_width="145dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/ropa"
+            android:layout_margin="10sp"/>
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tituloropa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ropa_product"
+                android:textColor="@color/blanco"
+                android:textSize="30sp"/>
+            <TextView
+                android:id="@+id/descripropa_products"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/desropa_products"
+                android:textColor="@color/blanco"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/precioropa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/violeta"
+                    android:textSize="20sp"
+                    android:text="@string/precio_productos"
+                    android:layout_marginRight="20sp"/>
+                <TextView
+                    android:id="@+id/valorropa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/violeta"
+                    android:text="@string/_70000"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            style="@style/edit_carrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20sp">
+            <ImageView
+
+                android:id="@+id/imghogar_Product"
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/casa"
+                android:layout_margin="10sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/titulohogar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estaca para Jardin"
+                    android:textColor="@color/blanco"
+                    android:textSize="30sp"/>
+                <TextView
+                    android:id="@+id/desHogar_products"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deshogar_producto"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/preciohogar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/violeta"
+                        android:textSize="20sp"
+                        android:text="@string/precio_productos"
+                        android:layout_marginRight="20sp"/>
+                    <TextView
+                        android:id="@+id/valorhogar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/violeta"
+                        android:text="@string/valorHogar"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/edit_carrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20sp">
+            <ImageView
+                android:id="@+id/imgtech"
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/electronica"
+                android:layout_margin="10sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tituloElec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Portatil HP"
+                    android:textColor="@color/blanco"
+                    android:textSize="30sp"/>
+                <TextView
+                    android:id="@+id/descrielec_products"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Portátil potente y ligero, ideal para trabajo y entretenimiento. Rendimiento eficiente y batería de larga duración."
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/preciotech"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/violeta"
+                        android:textSize="20sp"
+                        android:text="@string/precio_productos"
+                        android:layout_marginRight="20sp"/>
+                    <TextView
+                        android:id="@+id/valortech"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/violeta"
+                        android:text="1800000"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/edit_carrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20sp">
+            <ImageView
+
+                android:id="@+id/imgAccs_Product"
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/accesorios"
+                android:layout_margin="10sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tituloAcces"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gafas_de_sol"
+                    android:textColor="@color/blanco"
+                    android:textSize="30sp"/>
+                <TextView
+                    android:id="@+id/desAcc_produc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/des_gasfaproduc"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/preciogafas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/violeta"
+                        android:textSize="20sp"
+                        android:text="@string/precio_productos"
+                        android:layout_marginRight="20sp"/>
+                    <TextView
+                        android:id="@+id/valorgafas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:textColor="@color/violeta"
+                        android:text="60000"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

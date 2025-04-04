@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/violeta">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/morado">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/logoMainMenu"
+            android:src="@drawable/logo"
+            android:paddingStart="5sp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/editarperfil"
+            android:text="@string/editar_perfil_Titulo"
+            android:textColor="@color/blanco"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingStart="100dp"
+            android:textSize="30sp">
+        </TextView>
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="30dp">
+
+            <ImageView
+                android:id="@+id/img_usuario_Editperfil"
+                android:layout_width="175dp"
+                android:layout_height="181dp"
+                app:srcCompat="@drawable/perfil" />
+
+            <Button
+                android:id="@+id/editarinfo_perfil"
+                style="@style/edit_iniciar"
+                android:layout_width="123dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="50sp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/btn_editar_foto_perfil"
+                app:backgroundTint="@null" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/text_nombres_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_nombre_Registro"
+                android:textColor="@color/blanco"
+                android:layout_marginTop="30sp"
+                android:fontFamily="@font/bowlby_one"/>
+
+            <EditText
+                android:id="@+id/nombres_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="@string/text_def_nombre_editfrag"
+                android:textColor="@color/blanco"
+                android:layout_marginBottom="20sp"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:id="@+id/text_apellidos_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_apellido_Registro"
+                android:textColor="@color/blanco"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/bowlby_one"/>
+            <EditText
+                android:id="@+id/apellido_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:text="@string/Texto_def_apell_editfrag"
+                android:textColor="@color/blanco"
+                android:layout_marginBottom="20sp"
+                android:fontFamily="@font/roboto_medium"/>
+            <TextView
+                android:id="@+id/text_correo_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_correo_Registro"
+                android:textColor="@color/blanco"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/bowlby_one"/>
+            <EditText
+                android:id="@+id/correo_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:text="@string/Texto_def_correo_editfrag"
+                android:textColor="@color/blanco"
+                android:layout_marginBottom="20sp"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <TextView
+                android:id="@+id/text_telefono_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_telefono_Registro"
+                android:textColor="@color/blanco"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/bowlby_one"/>
+            <EditText
+                android:id="@+id/telefono_perfil"
+                android:layout_width="match_parent"
+                android:layout_height="48sp"
+                android:text="@string/Texto_def_tel_editfrag"
+                android:textColor="@color/blanco"
+                android:layout_marginBottom="20sp"
+                android:fontFamily="@font/roboto_medium"/>
+
+            <Button
+                android:id="@+id/btnGuardarInfo_editperfil"
+                style="@style/edit_iniciar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_guardar_informacion"
+                android:layout_marginBottom="20sp"
+                android:fontFamily="@font/roboto_medium"
+                app:backgroundTint="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

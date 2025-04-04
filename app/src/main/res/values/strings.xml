@@ -20,8 +20,6 @@
     <string name="btn_registro">Registrarse</string>
     <string name="btn_continuarRec">Continuar</string>
     <string name="btn_Editar_Perfil">Editar Información</string>
-
-
     <string name="text_recontra">Introduzca su correo electronico para recibir las intrucciones de recuperar contraseña</string>
     <string name="welcome_drawer_header">welcome</string>
     <string name="productosMenu">productos</string>
@@ -30,5 +28,59 @@
     <string name="pantalla_de_productos_fragmenProductos">pantalla de productos</string>
     <string name="navigation_drawer_open">abrir\n</string>
     <string name="navigation_drawer_close">Cerrar\n</string>
+    <string name="carrito_menu">Carrito</string>
+    <string name="categorias_menu">Categorias</string>
+    <string name="perfil_menu">perfil</string>
+    <string name="categoriaMenu">Categorias</string>
+    <string name="carritoMenu">Carrito de compras</string>
+    <string name="direccion_perfil">direccion</string>
+    <string name="nombreuser_perfil">nombreUser</string>
+    <string name="perfil">Perfil</string>
+    <string name="btn_editar_foto_perfil">editar foto</string>
+    <string name="apellido_user">Apellido user</string>
+    <string name="correo_user">Correo User</string>
+    <string name="direccion_user">Direccion_user</string>
+    <string name="electronica">1. electronica</string>
+    <string name="categoria_ropa">2. Ropa</string>
+    <string name="categoriasHogar">3. Hogar</string>
+    <string name="Categoria_Deportes">4. Deportes</string>
+    <string name="Categoria_Accesorios">5. Accesorios</string>
+    <string name="categoria">Categoria</string>
+    <string name="btn_guardar_informacion">Guardar Informacion</string>
+    <string name="editar_perfil_Titulo">Editar Perfil</string>
+    <string name="Texto_def_apell_editfrag">Apellido user</string>
+    <string name="text_def_nombre_editfrag">nombreUser</string>
+    <string name="Texto_def_correo_editfrag">Correo User</string>
+    <string name="Texto_def_tel_editfrag">telefono User</string>
+    <string name="TextBienvenida_Inicio">Bienvenido a Audiopod! 🎉                      |
+ Encuentra todo lo que necesitas en un solo lugar.🚀</string>
+    <string name="Textinfo_Inicio">📱 Audiopod: Tu tienda virtual ideal
+Audiopod es una plataforma de compras en línea donde encuentras una amplia variedad de productos al mejor precio. Con envíos rápidos, pagos seguros y ofertas exclusivas, hacemos que tu experiencia de compra sea fácil y conveniente.
+¡Descubre todo lo que tenemos para ti! 🚀! 🚀</string>
+    <string name="boton_fragInicio">Explorar Productos</string>
+    <string name="Titulo_FragInicio">Inicio</string>
+    <string name="carrito_Titulo">Carrito de compras</string>
+    <string name="_1_producto">1. Luz de Noche Zen</string>
+    <string name="proDesc_Carrito">Una lámpara suave que cambia de color, ideal para crear un ambiente relajante en tu habitación.</string>
+    <string name="cantidad_producto_carrito">cantidad: 2</string>
+    <string name="precio">$50.000 X unidad</string>
+    <string name="_2_producto">2. Crema Hidratante Vital</string>
+    <string name="proDesc_Carrito2">Crema ligera que hidrata y suaviza la piel, perfecta para todo tipo de piel.</string>
+    <string name="cantidad_producto_carrito2">cantidad: 2</string>
+    <string name="precio2">$50.000 X unidad</string>
+    <string name="btn_pagar">Pagar</string>
+    <string name="total_Carrito">TOTAL: $200.000</string>
+    <string name="Stringproducto">balon de futbol</string>
+    <string name="precioBalon_Products">40000</string>
+    <string name="precio_productos">precio  $</string>
+    <string name="DesBalon_productFrag">Balón de fútbol resistente y duradero, ideal para partidos y entrenamientos. Diseño aerodinámico para mejor precisión y control.</string>
+    <string name="ropa_product">Camiseta blanca</string>
+    <string name="desropa_products">Prendas cómodas y estilosas, diseñadas con materiales de alta calidad para cualquier ocasión. ¡Moda y confort en cada detalle</string>
+    <string name="_70000">70000</string>
+    <string name="deshogar_producto">Estaca resistente para jardín, ideal para sostener plantas y decorar espacios exteriores. Duradera y fácil de instalar</string>
+    <string name="valorHogar">80000</string>
+    <string name="gafas_de_sol">Gafas de sol</string>
+    <string name="des_gasfaproduc">Gafas con diseño moderno, livianas y cómodas, ideales para proteger la vista con estilo.</string>
+
 
 </resources>

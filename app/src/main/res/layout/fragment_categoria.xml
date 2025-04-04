@@ -1,6 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/violeta">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10sp">
+
+                    <LinearLayout
+                        android:layout_width="190dp"
+                        android:layout_height="170dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/categorias">
+                        <ImageView
+                            android:layout_width="150sp"
+                            android:layout_height="120sp"
+                            app:srcCompat="@drawable/electronica"
+                            android:layout_gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_marginStart="30sp"
+                    android:text="@string/electronica"
+                    android:textColor="@color/blanco"
+                    android:textSize="20sp" />
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="170dp"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/categorias">
+
+                    <ImageView
+                        android:layout_width="134dp"
+                        android:layout_height="93dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/ropa" />
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="60dp"
+                    android:gravity="center"
+                    android:text="@string/categoria_ropa"
+                    android:textColor="@color/blanco"
+                    android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10sp">
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="170dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/categorias">
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="150sp"
+                        android:layout_height="100sp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/casa" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginStart="55sp"
+                        android:text="@string/categoriasHogar"
+                        android:textColor="@color/blanco"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="170dp"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/categorias">
+
+                    <ImageView
+                        android:layout_width="134dp"
+                        android:layout_height="93dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/deportes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="40dp"
+                        android:gravity="center"
+                        android:text="@string/Categoria_Deportes"
+                        android:textColor="@color/blanco"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10sp">
+
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="170dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/categorias">
+                    <ImageView
+                        android:layout_width="150sp"
+                        android:layout_height="100sp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/accesorios"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="35sp"
+                        android:gravity="center"
+                        android:text="@string/Categoria_Accesorios"
+                        android:textColor="@color/blanco"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>

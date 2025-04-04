@@ -5,24 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/violeta">
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:padding="20dp">
-
-
-
         <ImageView
             android:id="@+id/img_usuario_perfil"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
             app:srcCompat="@drawable/usuario" />
+        <Button
+            android:id="@+id/editarinfo_perfil"
+            style="@style/edit_iniciar"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="@string/btn_Editar_Perfil"
+            android:layout_marginTop="50sp"
+            android:fontFamily="@font/roboto_medium"
+            app:backgroundTint="@null"/>
+        </LinearLayout>
 
-
-
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+            android:padding="20dp">
         <TextView
             android:id="@+id/text_nombres_perfil"
             android:layout_width="match_parent"
@@ -100,6 +112,7 @@
             android:layout_marginBottom="20sp"
             android:fontFamily="@font/roboto_medium"
             app:backgroundTint="@null"/>
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
 

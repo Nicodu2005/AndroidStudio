@@ -1,6 +1,241 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/violeta">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/morado">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/logoMainMenu"
+            android:src="@drawable/logo"
+            android:paddingStart="5sp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tituloMenu"
+            android:text="@string/perfil"
+            android:textColor="@color/blanco"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingStart="100dp"
+            android:textSize="30sp">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_usuario_perfil"
+                android:layout_width="175dp"
+                android:layout_height="181dp"
+                app:srcCompat="@drawable/perfil"
+                android:layout_gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/img_nombre_perfil"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/usuario" />
+
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_nombres_perfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bowlby_one"
+
+                        android:text="@string/text_nombre_Registro"
+                        android:textColor="@color/blanco" />
+
+                    <TextView
+                        android:id="@+id/nombres_perfil"
+                        android:layout_width="84dp"
+                        android:layout_height="35dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/nombreuser_perfil"
+                        android:textColor="@color/blanco" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="56dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_apellidos_perfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bowlby_one"
+                        android:text="@string/text_apellido_Registro"
+                        android:textColor="@color/blanco" />
+
+                    <TextView
+                        android:id="@+id/apellido_perfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/apellido_user"
+                        android:textColor="@color/blanco" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+                <ImageView
+                    android:id="@+id/img_correo_perfil"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                  android:layout_marginStart="5dp"
+                    app:srcCompat="@drawable/correo"/>
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="25dp"
+                    android:orientation="vertical">
+
+            <TextView
+            android:id="@+id/text_correo_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_correo_Registro"
+            android:textColor="@color/blanco"
+                android:fontFamily="@font/bowlby_one"/>
+        <TextView
+            android:id="@+id/correo_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/correo_user"
+            android:textColor="@color/blanco"
+
+            android:fontFamily="@font/roboto_medium"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:orientation="horizontal"
+                android:padding="18dp">
+
+                <ImageView
+                    android:id="@+id/img_direccion_perfil"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    app:srcCompat="@drawable/direccion" />
+
+                <LinearLayout
+                    android:layout_width="177dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_direccion_perfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/bowlby_one"
+                        android:text="@string/direccion_perfil"
+                        android:textColor="@color/blanco" />
+
+                    <TextView
+                        android:id="@+id/direccion_perfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="@string/direccion_user"
+                        android:textColor="@color/blanco" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+                <ImageView
+                    android:id="@+id/img_tel_perfil"
+                    android:layout_width="57dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    app:srcCompat="@drawable/tel" />
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="18dp"
+                    android:orientation="vertical">
+
+                <TextView
+            android:id="@+id/text_telefono_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_telefono_Registro"
+            android:textColor="@color/blanco"
+            android:fontFamily="@font/bowlby_one"/>
+        <TextView
+            android:id="@+id/telefono_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="telefono User"
+            android:textColor="@color/blanco"
+            android:fontFamily="@font/roboto_medium"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        <Button
+            android:id="@+id/BtnEditarInfo"
+            style="@style/edit_iniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_Editar_Perfil"
+            android:layout_marginBottom="20sp"
+            android:fontFamily="@font/roboto_medium"
+            app:backgroundTint="@null"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

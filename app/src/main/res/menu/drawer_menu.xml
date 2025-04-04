@@ -5,6 +5,15 @@
         android:title="@string/inicioMenu"/>
     <item  android:id="@+id/productosFragment"
         android:title="@string/productosMenu"/>
+    <item  android:id="@+id/perfilFragment"
+        android:title="@string/perfil_menu"/>
+
+    <item  android:id="@+id/categoriasFragment"
+        android:title="@string/categorias_menu"/>
+
+    <item  android:id="@+id/carritoFragment"
+        android:title="@string/carrito_menu"/>
+
 
 </group>
 </menu>

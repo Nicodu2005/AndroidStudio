@@ -21,8 +21,8 @@
             android:orientation ="horizontal">
 
             <ImageView
-                android:layout_width="50sp"
-                android:layout_height="50sp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:id="@+id/logoMainMenu"
                 android:src="@drawable/logo"
                 android:paddingStart="5sp">
@@ -50,6 +50,7 @@
             android:tag="nav_host_fragment"
             app:defaultNavHost="true"
             app:navGraph="@navigation/nav_graph"/>
+    </LinearLayout>
 
         <com.google.android.material.navigation.NavigationView
             android:layout_width="wrap_content"
@@ -58,11 +59,7 @@
             android:layout_gravity="start"
             android:background="@color/blanco"
             app:menu="@menu/drawer_menu"
-            app:headerLayout="@layout/drawer_header"
-            />
-
-
-    </LinearLayout>
+            app:headerLayout="@layout/drawer_header" />
 
 
 
