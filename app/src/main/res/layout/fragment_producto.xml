@@ -10,28 +10,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
-
         <LinearLayout
             style="@style/edit_carrito"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="220sp"
             android:orientation="horizontal"
-            android:layout_marginBottom="20sp">
+            android:layout_marginVertical="15sp">
          <ImageView
-
-            android:id="@+id/imgbalon_Product"
-            android:layout_width="145dp"
+             android:id="@+id/imgbalon_Product"
+            android:layout_width="80dp"
             android:layout_height="150dp"
             app:srcCompat="@drawable/deportes"
             android:layout_margin="10sp"/>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
         <TextView
-            android:id="@+id/titulobalon_products"
+            android:id="@+id/titulobalon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Stringproducto"
@@ -44,10 +41,44 @@
                 android:text="@string/DesBalon_productFrag"
                 android:textColor="@color/blanco"
                 android:textSize="15sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="10sp">
+                <TextView
+                    android:id="@+id/cantidaddisponiblebalon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stock_product"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="10sp"/>
+
+                <TextView
+                    android:id="@+id/intValorProd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ValorStock"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="10sp"/>
+
+                    <EditText
+                        android:id="@+id/baloncantidad"
+                        style="@style/edit_iniciar"
+                        android:background="@color/blanco"
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:textColor="@color/violeta"
+                        android:text="@string/textEdit_Products"/>
+
+                </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
                     android:id="@+id/precioBalon_Products"
@@ -56,7 +87,7 @@
                     android:textColor="@color/violeta"
                     android:textSize="20sp"
                     android:text="@string/precio_productos"
-                    android:layout_marginRight="20sp"/>
+                    android:layout_marginHorizontal="5sp"/>
                 <TextView
                     android:id="@+id/valorbalon"
                     android:layout_width="match_parent"
@@ -64,8 +95,17 @@
                     android:textSize="20sp"
                     android:textColor="@color/violeta"
                     android:text="@string/precioBalon_Products"/>
+                <Button
+                    android:id="@+id/BtnagregarProd1"
+                    style="@style/edit_iniciar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="@null"
+                    android:text="@string/text_btnagregar"
+                    android:layout_marginHorizontal="10dp"/>
 
             </LinearLayout>
+
         </LinearLayout>
         </LinearLayout>
 
@@ -74,13 +114,13 @@
     <LinearLayout
         style="@style/edit_carrito"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="220sp"
         android:orientation="horizontal"
-        android:layout_marginBottom="20sp">
+        android:layout_marginVertical="15sp">
 
         <ImageView
             android:id="@+id/imgropa_Product"
-            android:layout_width="145dp"
+            android:layout_width="80dp"
             android:layout_height="150dp"
             app:srcCompat="@drawable/ropa"
             android:layout_margin="10sp"/>
@@ -103,6 +143,39 @@
                 android:text="@string/desropa_products"
                 android:textColor="@color/blanco"
                 android:textSize="15sp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10sp">
+                <TextView
+                    android:id="@+id/cantidaddisponibleropa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stock_product"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="10sp"/>
+
+                <TextView
+                    android:id="@+id/intValorRopaStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ValorStock"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="10sp"/>
+
+                <EditText
+                    android:id="@+id/hogarcantidad"
+                    style="@style/edit_iniciar"
+                    android:background="@color/blanco"
+                    android:layout_width="match_parent"
+                    android:layout_height="20sp"
+                    android:textColor="@color/violeta"
+                    android:text="@string/textEdit_Products"/>
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -123,6 +196,14 @@
                     android:textSize="20sp"
                     android:textColor="@color/violeta"
                     android:text="@string/_70000"/>
+                <Button
+                    android:id="@+id/Btnagregarprod2"
+                    style="@style/edit_iniciar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:backgroundTint="@null"
+                    android:layout_marginStart="10sp"
+                    android:text="@string/text_btnagregar"/>
 
             </LinearLayout>
         </LinearLayout>
@@ -133,11 +214,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginBottom="20sp">
+            android:layout_marginVertical="15sp">
             <ImageView
 
                 android:id="@+id/imghogar_Product"
-                android:layout_width="145dp"
+                android:layout_width="80dp"
                 android:layout_height="150dp"
                 app:srcCompat="@drawable/casa"
                 android:layout_margin="10sp"/>
@@ -147,10 +228,10 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
-                    android:id="@+id/titulohogar"
+                    android:id="@+id/titulohogarProductos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Estaca para Jardin"
+                    android:text="@string/tit_Estaca"
                     android:textColor="@color/blanco"
                     android:textSize="30sp"/>
                 <TextView
@@ -160,6 +241,39 @@
                     android:text="@string/deshogar_producto"
                     android:textColor="@color/blanco"
                     android:textSize="15sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="10sp">
+                    <TextView
+                        android:id="@+id/cantidaddisponibleHogar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stock_product"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="10sp"/>
+
+                    <TextView
+                        android:id="@+id/intValorStock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ValorStock"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="10sp"/>
+
+                    <EditText
+                        android:id="@+id/portatilcantidad"
+                        style="@style/edit_iniciar"
+                        android:background="@color/blanco"
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:textColor="@color/violeta"
+                        android:text="@string/textEdit_Products"/>
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -174,12 +288,20 @@
                         android:text="@string/precio_productos"
                         android:layout_marginRight="20sp"/>
                     <TextView
-                        android:id="@+id/valorhogar"
+                        android:id="@+id/valorhogarpro"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
                         android:textColor="@color/violeta"
                         android:text="@string/valorHogar"/>
+                    <Button
+                        android:id="@+id/Btnagregarropa"
+                        style="@style/edit_iniciar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:backgroundTint="@null"
+                        android:layout_marginStart="10sp"
+                        android:text="@string/text_btnagregar"/>
 
                 </LinearLayout>
             </LinearLayout>
@@ -188,12 +310,12 @@
         <LinearLayout
             style="@style/edit_carrito"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="220sp"
             android:orientation="horizontal"
-            android:layout_marginBottom="20sp">
+            android:layout_marginVertical="15sp">
             <ImageView
                 android:id="@+id/imgtech"
-                android:layout_width="145dp"
+                android:layout_width="80dp"
                 android:layout_height="150dp"
                 app:srcCompat="@drawable/electronica"
                 android:layout_margin="10sp"/>
@@ -203,19 +325,52 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <TextView
-                    android:id="@+id/tituloElec"
+                    android:id="@+id/titulotechPortatil"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Portatil HP"
+                    android:text="@string/titleport"
                     android:textColor="@color/blanco"
                     android:textSize="30sp"/>
                 <TextView
-                    android:id="@+id/descrielec_products"
+                    android:id="@+id/descritech_products"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Portátil potente y ligero, ideal para trabajo y entretenimiento. Rendimiento eficiente y batería de larga duración."
+                    android:text="@string/des_port"
                     android:textColor="@color/blanco"
                     android:textSize="15sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="10sp">
+                    <TextView
+                        android:id="@+id/cantidaddisponiblePortatil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stock_product"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="10sp"/>
+
+                    <TextView
+                        android:id="@+id/cantidadstockPortatil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ValorStock"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="10sp"/>
+
+                    <EditText
+                        android:id="@+id/techcantidad"
+                        style="@style/edit_iniciar"
+                        android:background="@color/blanco"
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:textColor="@color/violeta"
+                        android:text="@string/textEdit_Products"/>
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -227,30 +382,41 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/violeta"
                         android:textSize="20sp"
-                        android:text="@string/precio_productos"
-                        android:layout_marginRight="20sp"/>
+                        android:text="@string/precio_productos" />
                     <TextView
-                        android:id="@+id/valortech"
+                        android:id="@+id/Valorprod_tech"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
                         android:textColor="@color/violeta"
-                        android:text="1800000"/>
+                        android:text="@string/valorport"/>
+                    <Button
+                        android:id="@+id/Btnagregartech"
+                        style="@style/edit_iniciar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:backgroundTint="@null"
+
+                        android:text="@string/text_btnagregar"/>
 
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
+
+
+
+
         <LinearLayout
             style="@style/edit_carrito"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="220sp"
             android:orientation="horizontal"
-            android:layout_marginBottom="20sp">
+            android:layout_marginVertical="15dp">
             <ImageView
 
                 android:id="@+id/imgAccs_Product"
-                android:layout_width="145dp"
+                android:layout_width="80dp"
                 android:layout_height="150dp"
                 app:srcCompat="@drawable/accesorios"
                 android:layout_margin="10sp"/>
@@ -273,6 +439,40 @@
                     android:text="@string/des_gasfaproduc"
                     android:textColor="@color/blanco"
                     android:textSize="15sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginVertical="10sp">
+                    <TextView
+                        android:id="@+id/cantidaddisponibleGafas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stock_product"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="10sp"/>
+
+                    <TextView
+                        android:id="@+id/intValorProd5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ValorStock"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="10sp"/>
+
+                    <EditText
+
+                        android:id="@+id/gafascantidad"
+                        style="@style/edit_iniciar"
+                        android:background="@color/blanco"
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:textColor="@color/violeta"
+                        android:text="@string/textEdit_Products"/>
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -292,7 +492,15 @@
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
                         android:textColor="@color/violeta"
-                        android:text="60000"/>
+                        android:text="@string/_60000"/>
+                    <Button
+                        android:id="@+id/Btnagregarprod5"
+                        style="@style/edit_iniciar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:backgroundTint="@null"
+                        android:layout_marginStart="10sp"
+                        android:text="@string/text_btnagregar"/>
 
                 </LinearLayout>
             </LinearLayout>

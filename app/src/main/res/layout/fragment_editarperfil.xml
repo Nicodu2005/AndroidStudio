@@ -76,10 +76,10 @@
                 android:fontFamily="@font/bowlby_one"/>
 
             <EditText
-                android:id="@+id/nombres_perfil"
+                android:id="@+id/Editnombres_perfil"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:text="@string/text_def_nombre_editfrag"
+                android:text=""
                 android:textColor="@color/blanco"
                 android:layout_marginBottom="20sp"
                 android:fontFamily="@font/roboto_medium"/>
@@ -93,10 +93,10 @@
                 android:layout_marginTop="20sp"
                 android:fontFamily="@font/bowlby_one"/>
             <EditText
-                android:id="@+id/apellido_perfil"
+                android:id="@+id/Editapellido_perfil"
                 android:layout_width="match_parent"
                 android:layout_height="48sp"
-                android:text="@string/Texto_def_apell_editfrag"
+                android:text=""
                 android:textColor="@color/blanco"
                 android:layout_marginBottom="20sp"
                 android:fontFamily="@font/roboto_medium"/>
@@ -109,10 +109,10 @@
                 android:layout_marginTop="20sp"
                 android:fontFamily="@font/bowlby_one"/>
             <EditText
-                android:id="@+id/correo_perfil"
+                android:id="@+id/Editcorreo_perfil"
                 android:layout_width="match_parent"
                 android:layout_height="48sp"
-                android:text="@string/Texto_def_correo_editfrag"
+                android:text=""
                 android:textColor="@color/blanco"
                 android:layout_marginBottom="20sp"
                 android:fontFamily="@font/roboto_medium"/>
@@ -126,10 +126,10 @@
                 android:layout_marginTop="20sp"
                 android:fontFamily="@font/bowlby_one"/>
             <EditText
-                android:id="@+id/telefono_perfil"
+                android:id="@+id/Edittelefono_perfil"
                 android:layout_width="match_parent"
                 android:layout_height="48sp"
-                android:text="@string/Texto_def_tel_editfrag"
+                android:text=""
                 android:textColor="@color/blanco"
                 android:layout_marginBottom="20sp"
                 android:fontFamily="@font/roboto_medium"/>

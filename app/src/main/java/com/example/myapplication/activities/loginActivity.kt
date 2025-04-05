@@ -72,7 +72,7 @@ class LoginActivity : AppCompatActivity () {
     }
 
     private fun rediperfil() {
-        val intent = Intent(this, PerfilActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()
     }

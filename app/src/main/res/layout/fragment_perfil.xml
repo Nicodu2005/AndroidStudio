@@ -10,32 +10,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="@color/morado">
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:id="@+id/logoMainMenu"
-            android:src="@drawable/logo"
-            android:paddingStart="5sp"/>
-
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:id="@+id/tituloMenu"
-            android:text="@string/perfil"
-            android:textColor="@color/blanco"
-            android:textAlignment="center"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:paddingStart="100dp"
-            android:textSize="30sp">
-        </TextView>
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -68,7 +43,7 @@
                     app:srcCompat="@drawable/usuario" />
 
                 <LinearLayout
-                    android:layout_width="120dp"
+                    android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_marginStart="10dp"
                     android:orientation="vertical">
@@ -91,9 +66,24 @@
                         android:textColor="@color/blanco" />
                 </LinearLayout>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+                <ImageView
+                    android:id="@+id/img_apellido_perfil"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    app:srcCompat="@drawable/usuario"/>
+
                 <LinearLayout
-                    android:layout_width="150dp"
+                    android:layout_width="match_parent"
                     android:layout_height="56dp"
+                    android:layout_marginStart="25dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -103,7 +93,6 @@
                         android:fontFamily="@font/bowlby_one"
                         android:text="@string/text_apellido_Registro"
                         android:textColor="@color/blanco" />
-
                     <TextView
                         android:id="@+id/apellido_perfil"
                         android:layout_width="match_parent"
@@ -114,6 +103,8 @@
                         android:textColor="@color/blanco" />
                 </LinearLayout>
             </LinearLayout>
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="87dp"
@@ -127,7 +118,7 @@
                     app:srcCompat="@drawable/correo"/>
 
                 <LinearLayout
-                    android:layout_width="150dp"
+                    android:layout_width="match_parent"
                     android:layout_height="56dp"
                     android:layout_marginStart="25dp"
                     android:orientation="vertical">
@@ -150,45 +141,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="87dp"
-                android:orientation="horizontal"
-                android:padding="18dp">
-
-                <ImageView
-                    android:id="@+id/img_direccion_perfil"
-                    android:layout_width="57dp"
-                    android:layout_height="50dp"
-                    android:layout_marginStart="5dp"
-                    app:srcCompat="@drawable/direccion" />
-
-                <LinearLayout
-                    android:layout_width="177dp"
-                    android:layout_height="66dp"
-                    android:layout_marginStart="20dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/text_direccion_perfil"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-
-                        android:fontFamily="@font/bowlby_one"
-                        android:text="@string/direccion_perfil"
-                        android:textColor="@color/blanco" />
-
-                    <TextView
-                        android:id="@+id/direccion_perfil"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-
-                        android:fontFamily="@font/roboto_medium"
-                        android:text="@string/direccion_user"
-                        android:textColor="@color/blanco" />
-                </LinearLayout>
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"

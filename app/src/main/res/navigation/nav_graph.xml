@@ -38,6 +38,37 @@
         android:label="editar Informacion"/>
 
 
+    <fragment
+        android:id="@+id/electronicaFragment"
+        android:name="com.example.myapplication.fragments.ElectronicaFragment"
+        app:defaultNavHost="true"
+        android:label="@string/ElectronicaProducts"/>
+
+    <fragment
+        android:id="@+id/ropaFragment"
+        android:name="com.example.myapplication.fragments.RopaFragment"
+        app:defaultNavHost="true"
+        android:label="@string/ropaProducts"/>
+
+    <fragment
+        android:id="@+id/deporFragment"
+        android:name="com.example.myapplication.fragments.DeportesFragment"
+        app:defaultNavHost="true"
+        android:label="@string/deportesProducts"/>
+
+    <fragment
+        android:id="@+id/AccesoriosFragment"
+        android:name="com.example.myapplication.fragments.AccesoriosFragment"
+        app:defaultNavHost="true"
+        android:label="@string/Categoria_Accesorios"/>
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.myapplication.fragments.CasaFragment"
+        app:defaultNavHost="true"
+        android:label="@string/hogar"/>
+
+
 
 
 

@@ -7,45 +7,47 @@
     android:background="@color/violeta">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
 
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            android:background="@drawable/categorias"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginVertical="10sp">
 
-            <LinearLayout
+            <ImageView
+                android:id="@+id/electronicaCate"
+                android:layout_width="150sp"
+                android:layout_height="120sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/electronica" />
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:padding="10sp">
-
-                    <LinearLayout
-                        android:layout_width="190dp"
-                        android:layout_height="170dp"
-                        android:orientation="vertical"
-                        android:background="@drawable/categorias">
-                        <ImageView
-                            android:layout_width="150sp"
-                            android:layout_height="120sp"
-                            app:srcCompat="@drawable/electronica"
-                            android:layout_gravity="center"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:layout_marginStart="30sp"
-                    android:text="@string/electronica"
-                    android:textColor="@color/blanco"
-                    android:textSize="20sp" />
-                    </LinearLayout>
+                android:text="@string/electronica"
+                android:gravity="center"
+                android:textColor="@color/blanco"
+                android:textSize="20sp" />
+        </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="190dp"
+                    android:layout_width="200sp"
                     android:layout_height="170dp"
                     android:orientation="vertical"
-                    android:layout_marginStart="20dp"
-                    android:background="@drawable/categorias">
+                    android:gravity="center"
+                    android:background="@drawable/categorias"
+                    android:layout_marginVertical="10sp"
+                    >
 
                     <ImageView
+                        android:id="@+id/ropaCate"
                         android:layout_width="134dp"
                         android:layout_height="93dp"
                         android:layout_gravity="center"
@@ -55,28 +57,23 @@
                     <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="60dp"
                     android:gravity="center"
                     android:text="@string/categoria_ropa"
                     android:textColor="@color/blanco"
                     android:textSize="20sp" />
 
-                </LinearLayout>
-
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:padding="10sp">
+
 
                 <LinearLayout
-                    android:layout_width="190dp"
+                    android:layout_width="200dp"
                     android:layout_height="170dp"
                     android:orientation="vertical"
-                    android:background="@drawable/categorias">
+                    android:background="@drawable/categorias"
+                    android:layout_marginVertical="10sp">
 
                     <ImageView
+                        android:id="@+id/hogarCate"
                         android:layout_marginTop="10dp"
                         android:layout_width="150sp"
                         android:layout_height="100sp"
@@ -92,15 +89,15 @@
                         android:textColor="@color/blanco"
                         android:textSize="20sp" />
                 </LinearLayout>
-
                 <LinearLayout
                     android:layout_width="190dp"
                     android:layout_height="170dp"
                     android:orientation="vertical"
-                    android:layout_marginStart="20dp"
+
                     android:background="@drawable/categorias">
 
                     <ImageView
+                        android:id="@+id/deportesCate"
                         android:layout_width="134dp"
                         android:layout_height="93dp"
                         android:layout_gravity="center"
@@ -115,22 +112,15 @@
                         android:text="@string/Categoria_Deportes"
                         android:textColor="@color/blanco"
                         android:textSize="20sp" />
-
-                </LinearLayout>
-
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:padding="10sp">
-
                 <LinearLayout
-                    android:layout_width="190dp"
+                    android:layout_width="200dp"
                     android:layout_height="170dp"
                     android:orientation="vertical"
-                    android:background="@drawable/categorias">
+                    android:background="@drawable/categorias"
+                    android:layout_marginVertical="10sp">
                     <ImageView
+                        android:id="@+id/accesoriosCate"
                         android:layout_width="150sp"
                         android:layout_height="100sp"
                         android:layout_marginTop="10dp"
@@ -147,5 +137,5 @@
                         android:textSize="20sp" />
                 </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
+
 </ScrollView>

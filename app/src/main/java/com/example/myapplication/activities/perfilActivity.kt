@@ -1,5 +1,5 @@
-package com.example.myapplication.activities
-
+//package com.example.myapplication.activities
+/*
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.content.SharedPreferences
@@ -61,7 +61,7 @@ class PerfilActivity : AppCompatActivity () {
     }
 
     override fun onPause() {
-        super.onPause()
+        super.onPause()-h
         Log.d("Activity perfil", "esta en estado onPause")
     }
 
@@ -75,3 +75,4 @@ class PerfilActivity : AppCompatActivity () {
         Log.d("Activity perfil", "esta en estado onDestroy")
     }
 }
+*/
