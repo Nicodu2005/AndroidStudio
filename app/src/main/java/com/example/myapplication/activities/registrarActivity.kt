@@ -1,5 +1,5 @@
 
-package com.example.myapplication
+package com.example.myapplication.activities
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -10,6 +10,7 @@ import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.R
 
 class RegistrarseActivity : AppCompatActivity () {
 

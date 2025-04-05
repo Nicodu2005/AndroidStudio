@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.myapplication.R
 
 
 class HomeActivity : AppCompatActivity (){
@@ -31,13 +32,13 @@ class HomeActivity : AppCompatActivity (){
 
     private fun redirrecion (){
 
-        val intent = Intent(this,LoginActivity::class.java)
+        val intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
         finish()
 
     }
     private fun rediregistroHome(){
-        val intent = Intent(this,RegistrarseActivity::class.java)
+        val intent = Intent(this, RegistrarseActivity::class.java)
         startActivity(intent)
         finish()
     }

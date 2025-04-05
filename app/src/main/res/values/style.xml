@@ -18,4 +18,9 @@
         <item name="android:textColor">@color/blanco</item>
     </style>
 
+    <style name="edit_carrito" parent="@android:style/Widget.Button">
+        <item name="android:background">@drawable/categorias</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
 </resources>

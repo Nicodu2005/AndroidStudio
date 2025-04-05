@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/violeta">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            android:background="@drawable/categorias"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginVertical="10sp">
+
+            <ImageView
+                android:id="@+id/electronicaCate"
+                android:layout_width="150sp"
+                android:layout_height="120sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/electronica" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/electronica"
+                android:gravity="center"
+                android:textColor="@color/blanco"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200sp"
+                    android:layout_height="170dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/categorias"
+                    android:layout_marginVertical="10sp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/ropaCate"
+                        android:layout_width="134dp"
+                        android:layout_height="93dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/ropa" />
+
+                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/categoria_ropa"
+                    android:textColor="@color/blanco"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="170dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/categorias"
+                    android:layout_marginVertical="10sp">
+
+                    <ImageView
+                        android:id="@+id/hogarCate"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="150sp"
+                        android:layout_height="100sp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/casa" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginStart="55sp"
+                        android:text="@string/categoriasHogar"
+                        android:textColor="@color/blanco"
+                        android:textSize="20sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="190dp"
+                    android:layout_height="170dp"
+                    android:orientation="vertical"
+
+                    android:background="@drawable/categorias">
+
+                    <ImageView
+                        android:id="@+id/deportesCate"
+                        android:layout_width="134dp"
+                        android:layout_height="93dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        app:srcCompat="@drawable/deportes" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="40dp"
+                        android:gravity="center"
+                        android:text="@string/Categoria_Deportes"
+                        android:textColor="@color/blanco"
+                        android:textSize="20sp" />
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="170dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/categorias"
+                    android:layout_marginVertical="10sp">
+                    <ImageView
+                        android:id="@+id/accesoriosCate"
+                        android:layout_width="150sp"
+                        android:layout_height="100sp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/accesorios"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="35sp"
+                        android:gravity="center"
+                        android:text="@string/Categoria_Accesorios"
+                        android:textColor="@color/blanco"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+</ScrollView>
