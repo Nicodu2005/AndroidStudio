@@ -114,10 +114,8 @@
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:ems="10"
             android:hint="@string/text_programaAcademico"
             android:textColor="@color/negro"
-            android:inputType="phone"
             android:textSize="15sp"
             android:layout_marginTop="5dp"/>
         <TextView
@@ -134,7 +132,6 @@
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:ems="10"
             android:hint="@string/text_Semestre"
             android:textColor="@color/negro"
             android:textSize="15sp"
