@@ -10,7 +10,34 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="@color/azul"
+            android:gravity="center"
+            android:orientation ="horizontal">
 
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/logoMainMenu"
+                android:src="@drawable/logo"
+                android:paddingStart="5sp">
+            </ImageView>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tituloMenu"
+                android:text="@string/misdatos"
+                android:textColor="@color/blanco"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:textSize="30sp" />
+        </androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -154,37 +181,63 @@
                     android:layout_marginStart="5dp"
                     app:srcCompat="@drawable/tel" />
                 <LinearLayout
-                    android:layout_width="150dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="56dp"
                     android:layout_marginStart="18dp"
                     android:orientation="vertical">
 
-                <TextView
-            android:id="@+id/text_telefono_perfil"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/text_telefono_Registro"
-            android:textColor="@color/blanco"
-            android:fontFamily="@font/bowlby_one"/>
+                    <TextView
+                        android:id="@+id/text_programa"
+                        android:layout_width="258dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bowlby_one"
+                        android:text="@string/text_programaAcademico"
+                        android:textColor="@color/blanco" />
         <TextView
-            android:id="@+id/telefono_perfil"
+            android:id="@+id/programa_user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="telefono User"
+            android:text="@string/programauser"
             android:textColor="@color/blanco"
             android:fontFamily="@font/roboto_medium"/>
                 </LinearLayout>
             </LinearLayout>
 
-        <Button
-            android:id="@+id/BtnEditarInfo"
-            style="@style/edit_iniciar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_Editar_Perfil"
-            android:layout_marginBottom="20sp"
-            android:fontFamily="@font/roboto_medium"
-            app:backgroundTint="@null"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:orientation="horizontal"
+                android:padding="20dp">
+                <ImageView
+                    android:id="@+id/img_semestre_perfil"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    app:srcCompat="@drawable/correo"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textsemestre_perfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_Semestre"
+                        android:textColor="@color/blanco"
+                        android:fontFamily="@font/bowlby_one"/>
+                    <TextView
+                        android:id="@+id/semestre_perfil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_Semestre_user"
+                        android:textColor="@color/blanco"
+                        android:fontFamily="@font/roboto_medium"/>
+                </LinearLayout>
+            </LinearLayout>
+
 
             </LinearLayout>
         </LinearLayout>

@@ -16,10 +16,11 @@ class RegistrarseActivity : AppCompatActivity () {
 
     private lateinit var editTextNombres: EditText
     private lateinit var editTextApellido: EditText
-    private lateinit var editTextTelefono: EditText
+    private lateinit var editTextSemestre: EditText
     private lateinit var editTextCorreo: EditText
     private lateinit var editTextContrasena: EditText
     private lateinit var editTextRecontrasena: EditText
+    private lateinit var editTextPrograma: EditText
     private lateinit var buttonRegistro: Button
     private lateinit var TyC: CheckBox
 
@@ -36,7 +37,8 @@ class RegistrarseActivity : AppCompatActivity () {
         editTextNombres = findViewById(R.id.nombre_registro)
         editTextApellido = findViewById(R.id.apellidos_registro)
         editTextCorreo = findViewById(R.id.correo_registro)
-        editTextTelefono = findViewById(R.id.telefono_registro)
+        editTextPrograma = findViewById(R.id.programa_registro)
+        editTextSemestre = findViewById(R.id.semestre)
         editTextContrasena = findViewById(R.id.contrasena_registro)
         editTextRecontrasena = findViewById(R.id.repContra_registro)
         buttonRegistro = findViewById(R.id.btn_registrarse)
@@ -60,7 +62,8 @@ class RegistrarseActivity : AppCompatActivity () {
         val apellido = editTextApellido.text.toString().trim()
         val correo = editTextCorreo.text.toString().trim()
         val emailPattern = "[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}"
-        val telefono = editTextTelefono.text.toString().trim()
+        val Programa = editTextPrograma.text.toString().trim()
+        val semestre = editTextSemestre.text.toString().trim()
         val contrasena = editTextContrasena.text.toString().trim()
         val recontrasena = editTextRecontrasena.text.toString().trim()
         val TeryCond = TyC.isChecked
@@ -82,8 +85,11 @@ class RegistrarseActivity : AppCompatActivity () {
             ).show()
             return false
         }
-        else if (telefono.isEmpty()) {
-            Toast.makeText(this, "el campo es telefono requerido", Toast.LENGTH_LONG).show()
+        else if (Programa.isEmpty()) {
+            Toast.makeText(this, "el campo es Programa es requerido", Toast.LENGTH_LONG).show()
+            return false}
+        else if (semestre.isEmpty()) {
+            Toast.makeText(this, "el campo semestre es requerido", Toast.LENGTH_LONG).show()
             return false
         } else if (contrasena.isEmpty()) {
             Toast.makeText(this, "el campo es contraseña requerido", Toast.LENGTH_LONG).show()
@@ -104,7 +110,8 @@ class RegistrarseActivity : AppCompatActivity () {
         editor.putString("nombres",editTextNombres.text.toString().trim())
         editor.putString("apellidos",editTextApellido.text.toString().trim())
         editor.putString("correo",editTextCorreo.text.toString().trim())
-        editor.putString("telefono",editTextTelefono.text.toString().trim())
+        editor.putString("programa",editTextPrograma.text.toString().trim())
+        editor.putString("semestre",editTextSemestre.text.toString().trim())
         editor.putString("contrasena",editTextContrasena.text.toString().trim())
         editor.apply()
 

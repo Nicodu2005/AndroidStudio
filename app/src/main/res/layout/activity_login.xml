@@ -95,6 +95,7 @@
         android:layout_width="209dp"
         android:layout_height="61dp"
         android:ems="10"
+
         android:hint="Ingresa contraseña"
         android:textColor="@color/negro"
         android:textSize="20sp"

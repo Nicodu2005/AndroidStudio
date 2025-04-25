@@ -47,7 +47,7 @@
                     android:orientation="horizontal"
                     android:layout_marginVertical="10sp">
                 <TextView
-                    android:id="@+id/cantidaddisponiblebalon"
+                    android:id="@+id/textStock"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/stock_product"
@@ -56,22 +56,29 @@
                     android:layout_marginEnd="10sp"/>
 
                 <TextView
-                    android:id="@+id/intValorProd1"
+                    android:id="@+id/intValorSrock"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/ValorStock"
                     android:textColor="@color/blanco"
                     android:textSize="15sp"
                     android:layout_marginEnd="10sp"/>
-
+                    <TextView
+                        android:id="@+id/cantidadIngresarbalon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textEdit_Products"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="10sp"/>
                     <EditText
                         android:id="@+id/baloncantidad"
                         style="@style/edit_iniciar"
                         android:background="@color/blanco"
-                        android:layout_width="match_parent"
+                        android:layout_width="100sp"
                         android:layout_height="20sp"
-                        android:textColor="@color/violeta"
-                        android:text="@string/textEdit_Products"/>
+                        android:textColor="@color/azul"
+                        />
 
                 </LinearLayout>
 
@@ -149,7 +156,7 @@
                 android:orientation="horizontal"
                 android:layout_marginVertical="10sp">
                 <TextView
-                    android:id="@+id/cantidaddisponibleropa"
+                    android:id="@+id/TextStockRopa"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/stock_product"
@@ -165,15 +172,22 @@
                     android:textColor="@color/blanco"
                     android:textSize="15sp"
                     android:layout_marginEnd="10sp"/>
-
+                <TextView
+                    android:id="@+id/cantidadIngresarropa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textEdit_Products"
+                    android:textColor="@color/blanco"
+                    android:textSize="15sp"
+                    android:layout_marginEnd="10sp"/>
                 <EditText
-                    android:id="@+id/hogarcantidad"
+                    android:id="@+id/ropacantidad"
                     style="@style/edit_iniciar"
                     android:background="@color/blanco"
-                    android:layout_width="match_parent"
+                    android:layout_width="100sp"
                     android:layout_height="20sp"
-                    android:textColor="@color/violeta"
-                    android:text="@string/textEdit_Products"/>
+                    android:textColor="@color/azul"
+                    />
 
             </LinearLayout>
 
@@ -182,7 +196,7 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
                 <TextView
-                    android:id="@+id/precioropa"
+                    android:id="@+id/textprecioropa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/violeta"
@@ -216,7 +230,6 @@
             android:orientation="horizontal"
             android:layout_marginVertical="15sp">
             <ImageView
-
                 android:id="@+id/imghogar_Product"
                 android:layout_width="80dp"
                 android:layout_height="150dp"
@@ -247,7 +260,7 @@
                     android:orientation="horizontal"
                     android:layout_marginVertical="10sp">
                     <TextView
-                        android:id="@+id/cantidaddisponibleHogar"
+                        android:id="@+id/textstockHogar"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/stock_product"
@@ -263,15 +276,22 @@
                         android:textColor="@color/blanco"
                         android:textSize="15sp"
                         android:layout_marginEnd="10sp"/>
+                    <TextView
+                        android:id="@+id/cantidadIngresarhogar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textEdit_Products"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="10sp"/>
 
                     <EditText
-                        android:id="@+id/portatilcantidad"
+                        android:id="@+id/hogarcantidadEdit"
                         style="@style/edit_iniciar"
-                        android:background="@color/blanco"
-                        android:layout_width="match_parent"
+                        android:layout_width="100sp"
                         android:layout_height="20sp"
-                        android:textColor="@color/violeta"
-                        android:text="@string/textEdit_Products"/>
+                        android:background="@color/blanco"
+                        android:textColor="@color/azul" />
 
                 </LinearLayout>
 
@@ -295,7 +315,7 @@
                         android:textColor="@color/violeta"
                         android:text="@string/valorHogar"/>
                     <Button
-                        android:id="@+id/Btnagregarropa"
+                        android:id="@+id/Btnagregarhogar"
                         style="@style/edit_iniciar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -344,7 +364,7 @@
                     android:orientation="horizontal"
                     android:layout_marginVertical="10sp">
                     <TextView
-                        android:id="@+id/cantidaddisponiblePortatil"
+                        android:id="@+id/TextStockPortatil"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/stock_product"
@@ -353,22 +373,29 @@
                         android:layout_marginEnd="10sp"/>
 
                     <TextView
-                        android:id="@+id/cantidadstockPortatil"
+                        android:id="@+id/valorStockPortatil"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/ValorStock"
                         android:textColor="@color/blanco"
                         android:textSize="15sp"
                         android:layout_marginEnd="10sp"/>
-
+                    <TextView
+                        android:id="@+id/cantidadIngresarportatil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textEdit_Products"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="10sp"/>
                     <EditText
                         android:id="@+id/techcantidad"
                         style="@style/edit_iniciar"
                         android:background="@color/blanco"
-                        android:layout_width="match_parent"
+                        android:layout_width="100sp"
                         android:layout_height="20sp"
-                        android:textColor="@color/violeta"
-                        android:text="@string/textEdit_Products"/>
+                        android:textColor="@color/azul"
+                        />
 
                 </LinearLayout>
 
@@ -445,7 +472,7 @@
                     android:orientation="horizontal"
                     android:layout_marginVertical="10sp">
                     <TextView
-                        android:id="@+id/cantidaddisponibleGafas"
+                        android:id="@+id/textgafasStock"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/stock_product"
@@ -454,7 +481,7 @@
                         android:layout_marginEnd="10sp"/>
 
                     <TextView
-                        android:id="@+id/intValorProd5"
+                        android:id="@+id/valorStockGafas"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/ValorStock"
@@ -462,15 +489,23 @@
                         android:textSize="15sp"
                         android:layout_marginEnd="10sp"/>
 
+                    <TextView
+                        android:id="@+id/cantidadIngresargafas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textEdit_Products"
+                        android:textColor="@color/blanco"
+                        android:textSize="15sp"
+                        android:layout_marginEnd="10sp"/>
                     <EditText
 
                         android:id="@+id/gafascantidad"
                         style="@style/edit_iniciar"
                         android:background="@color/blanco"
-                        android:layout_width="match_parent"
+                        android:layout_width="100sp"
                         android:layout_height="20sp"
-                        android:textColor="@color/violeta"
-                        android:text="@string/textEdit_Products"/>
+                        android:textColor="@color/azul"
+                        android:label="@string/textEdit_Products"/>
 
                 </LinearLayout>
 
@@ -507,6 +542,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
 
 </ScrollView>

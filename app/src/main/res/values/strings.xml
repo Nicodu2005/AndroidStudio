@@ -13,7 +13,7 @@
     <string name="text_nombre_Registro">Nombre</string>
     <string name="text_apellido_Registro">Apellido</string>
     <string name="text_telefono_Registro">Telefono</string>
-    <string name="text_correo_Registro">Correo</string>
+    <string name="text_correo_Registro">Correo Institucional</string>
     <string name="text_contrasena_Registro">Contraseña</string>
     <string name="text_concontrasena_Registro">Confirme contraseña</string>
     <string name="text_TyC">Acepto terminos y condiciones</string>
@@ -52,8 +52,7 @@
     <string name="text_def_nombre_editfrag">nombreUser</string>
     <string name="Texto_def_correo_editfrag">Correo User</string>
     <string name="Texto_def_tel_editfrag">telefono User</string>
-    <string name="TextBienvenida_Inicio">Bienvenido a Audiopod! 🎉                      |
- Encuentra todo lo que necesitas en un solo lugar.🚀</string>
+    <string name="TextBienvenida_Inicio">PARCIAL 2</string>
     <string name="Textinfo_Inicio">📱 Audiopod: Tu tienda virtual ideal
 Audiopod es una plataforma de compras en línea donde encuentras una amplia variedad de productos al mejor precio. Con envíos rápidos, pagos seguros y ofertas exclusivas, hacemos que tu experiencia de compra sea fácil y conveniente.
 ¡Descubre todo lo que tenemos para ti! 🚀! 🚀</string>
@@ -126,7 +125,20 @@ Audiopod es una plataforma de compras en línea donde encuentras una amplia vari
     <string name="hogar">Hogar</string>
     <string name="stock_product">Stock</string>
     <string name="ValorStock">100</string>
-    <string name="textEdit_Products">cantidad a agregar</string>
+    <string name="textEdit_Products">cantidad</string>
+    <string name="productos_agregado">Productos agregado</string>
+    <string name="text_programaAcademico">Programa Academico</string>
+    <string name="text_Semestre">Semestre cursando</string>
+    <string name="text_Semestre_user">Usersemestre</string>
+    <string name="programauser">Userprograma</string>
+    <string name="parcial_segundo_momento">PARCIAL SEGUNDO MOMENTO</string>
+    <string name="misdatos">Mi Perfil</string>
+    <string name="costo_aproximado_de_Transporte">costo aproximado de Trasnporte  (1 viaje)</string>
+    <string name="destinos">destinos</string>
+    <string name="indique_si_el_destino_nacional_o_internacional">Indique si el destino nacional o internacional</string>
+    <string name="analisis">Analisis</string>
+    <string name="historico">Historico</string>
+    <string name="logica">lOGICA</string>
 
 
 </resources>

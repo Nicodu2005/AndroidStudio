@@ -24,28 +24,6 @@ class CategoriaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_categoria, container, false)
-
-        ropa = view.findViewById(R.id.ropaCate)
-        deportes = view.findViewById(R.id.deportesCate)
-        electronica = view.findViewById(R.id.electronicaCate)
-        accesorios = view.findViewById(R.id.accesoriosCate)
-        hogar = view.findViewById(R.id.hogarCate)
-
-        ropa.setOnClickListener {
-            findNavController(this).navigate(R.id.ropaFragment)
-        }
-        deportes.setOnClickListener {
-            findNavController(this).navigate(R.id.deporFragment)
-        }
-        electronica.setOnClickListener {
-            findNavController(this).navigate(R.id.electronicaFragment)
-        }
-        accesorios.setOnClickListener {
-            findNavController(this).navigate(R.id.AccesoriosFragment)
-        }
-        hogar.setOnClickListener {
-            findNavController(this).navigate(R.id.HomeFragment)
-        }
         return view
     }
 }

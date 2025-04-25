@@ -101,25 +101,46 @@
             android:layout_marginTop="5dp"/>
 
         <TextView
-            android:id="@+id/text_Telefono_registo"
+            android:id="@+id/text_programa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/text_telefono_Registro"
+            android:text="@string/text_programaAcademico"
             android:fontFamily="@font/bowlby_one"
             android:textColor="@color/blanco"
             android:layout_marginTop="20dp"
             android:textSize="20sp" />
         <EditText
-            android:id="@+id/telefono_registro"
+            android:id="@+id/programa_registro"
             style="@style/EditTextRounded"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:ems="10"
-            android:hint="@string/text_telefono_Registro"
+            android:hint="@string/text_programaAcademico"
             android:textColor="@color/negro"
             android:inputType="phone"
             android:textSize="15sp"
             android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/text_semestre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_Semestre"
+            android:fontFamily="@font/bowlby_one"
+            android:textColor="@color/blanco"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/semestre"
+            style="@style/EditTextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/text_Semestre"
+            android:textColor="@color/negro"
+            android:inputType="phone"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+
 
         <TextView
             android:id="@+id/text_contrasena_registo"

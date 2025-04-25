@@ -58,15 +58,15 @@ class ProductosFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var view = inflater.inflate(R.layout.fragment_producto, container, false)
+        val view = inflater.inflate(R.layout.fragment_producto, container, false)
         sharedPreferences1 = requireActivity().getSharedPreferences("dataBalon", Context.MODE_PRIVATE)
         sharedPreferences2 = requireActivity().getSharedPreferences("dataropa", Context.MODE_PRIVATE)
         sharedPreferences3 = requireActivity().getSharedPreferences("datahogar", Context.MODE_PRIVATE)
         sharedPreferences4 = requireActivity().getSharedPreferences("dataelectronica", Context.MODE_PRIVATE)
-        sharedPreferences5= requireActivity().getSharedPreferences("productos", Context.MODE_PRIVATE)
+        sharedPreferences5= requireActivity().getSharedPreferences("dataaccesorios", Context.MODE_PRIVATE)
 
         tv_titulobalon_products = view.findViewById(R.id.titulobalon)
-        tv_cantidaddisponiblebalon = view.findViewById(R.id.cantidaddisponiblebalon)
+        tv_cantidaddisponiblebalon = view.findViewById(R.id.intValorSrock)
         tv_intValorProd1 = view.findViewById(R.id.valorbalon)
         Et_baloncantidad = view.findViewById(R.id.baloncantidad)
         btnAgregarbalon = view.findViewById(R.id.BtnagregarProd1)
@@ -75,25 +75,25 @@ class ProductosFragment : Fragment() {
         }
 
         tv_tituloropa = view.findViewById(R.id.tituloropa)
-        tv_cantidaddisponibleropa = view.findViewById(R.id.cantidaddisponibleropa)
-        tv_intValorProd2 = view.findViewById(R.id.intValorRopaStock)
-        Et_ropacantidad = view.findViewById(R.id.valorropa)
+        tv_cantidaddisponibleropa = view.findViewById(R.id.intValorRopaStock)
+        tv_intValorProd2 = view.findViewById(R.id.valorropa)
+        Et_ropacantidad = view.findViewById(R.id.ropacantidad)
         btnAgregarropa = view.findViewById(R.id.Btnagregarprod2)
         btnAgregarropa.setOnClickListener{
             guardardatosropa()
         }
 
         tv_titulohogar = view.findViewById(R.id.titulohogarProductos)
-        tv_cantidaddisponibleHogar = view.findViewById(R.id.cantidaddisponibleHogar)
+        tv_cantidaddisponibleHogar = view.findViewById(R.id.intValorStock)
         tv_intValorProd3 = view.findViewById(R.id.valorhogarpro)
-        Ethogarcantidad = view.findViewById(R.id.hogarcantidad)
-        btnAgregarhogar = view.findViewById(R.id.Btnagregarropa)
+        Ethogarcantidad = view.findViewById(R.id.hogarcantidadEdit)
+        btnAgregarhogar = view.findViewById(R.id.Btnagregarhogar)
         btnAgregarhogar.setOnClickListener{
             guardardatosHogar()
         }
 
         tv_tituloElec = view.findViewById(R.id.titulotechPortatil)
-        tv_cantidaddisponiblePortatil = view.findViewById(R.id.cantidadstockPortatil)
+        tv_cantidaddisponiblePortatil = view.findViewById(R.id.valorStockPortatil)
         tv_intValorProd4 = view.findViewById(R.id.Valorprod_tech)
         Et_portatilcantidad = view.findViewById(R.id.techcantidad)
         btnAgregarelec = view.findViewById(R.id.Btnagregartech)
@@ -102,7 +102,7 @@ class ProductosFragment : Fragment() {
         }
 
         tv_tituloAccesorio = view.findViewById(R.id.tituloAcces)
-        tv_cantidaddisponibleAccesorio = view.findViewById(R.id.cantidaddisponibleGafas)
+        tv_cantidaddisponibleAccesorio = view.findViewById(R.id.valorStockGafas)
         tv_intValorProd5 = view.findViewById(R.id.valorgafas)
         Et_accesoriocantidad = view.findViewById(R.id.gafascantidad)
         btnAgregaraccesorios = view.findViewById(R.id.Btnagregarprod5)
@@ -110,59 +110,77 @@ class ProductosFragment : Fragment() {
             guardardatosAccesorio()
         }
 
-
         return view
 
     }
     private fun guardardatos(){
-        val editor = sharedPreferences1.edit()
 
-        editor.putString("nombreproducto",tv_titulobalon_products.text.toString().trim())
-        editor.putString("cantidadDisponible",tv_cantidaddisponiblebalon.text.toString().trim())
-        editor.putString("Valor",tv_intValorProd1.text.toString().trim())
-        editor.putString("CantidadProducto",Et_baloncantidad.text.toString().trim())
-        editor.apply()
 
-        Toast.makeText(requireContext(),"registro exitoso", Toast.LENGTH_LONG).show()
+        val editorBalon = sharedPreferences1.edit()
+
+        editorBalon.putString("nombreproducto",tv_titulobalon_products.text.toString().trim())
+        editorBalon.putString("cantidadDisponible",tv_cantidaddisponiblebalon.text.toString().trim())
+        editorBalon.putString("Valor",tv_intValorProd1.text.toString().trim())
+        editorBalon.putString("CantidadProducto",Et_baloncantidad.text.toString().trim())
+        if (Et_baloncantidad.text.toString().trim().isEmpty()) {
+            Toast.makeText(requireContext(), "indique la cantidad", Toast.LENGTH_SHORT).show()
+        }else{
+            editorBalon.apply()
+            Toast.makeText(requireContext(), getString(R.string.productos_agregado), Toast.LENGTH_LONG).show()
+        }
+
     }
     private fun guardardatosropa(){
-        val editor = sharedPreferences2.edit()
-        editor.putString("nombreproducto",tv_tituloropa.text.toString().trim())
-        editor.putString("cantidadDisponible",tv_cantidaddisponibleropa.text.toString().trim())
-        editor.putString("Valor",tv_intValorProd2.text.toString().trim())
-        editor.putString("CantidadProducto",Et_ropacantidad.text.toString().trim())
-        editor.apply()
-        Toast.makeText(requireContext(),"registro exitoso", Toast.LENGTH_LONG).show()
-    }
+        val editorropa = sharedPreferences2.edit()
+        editorropa.putString("nombreproducto",tv_tituloropa.text.toString().trim())
+        editorropa.putString("cantidadDisponible",tv_cantidaddisponibleropa.text.toString().trim())
+        editorropa.putString("Valor",tv_intValorProd2.text.toString().trim())
+        editorropa.putString("CantidadProducto",Et_ropacantidad.text.toString().trim())
+        if (Et_ropacantidad.text.toString().trim().isEmpty()) {
+        Toast.makeText(requireContext(), "indique la cantidad", Toast.LENGTH_SHORT).show()
+    }else{
+        editorropa.apply()
+        Toast.makeText(requireContext(), getString(R.string.productos_agregado), Toast.LENGTH_LONG).show()
+    }}
     private fun guardardatosHogar(){
-        val editor = sharedPreferences3.edit()
+        val editorhogar = sharedPreferences3.edit()
 
-        editor.putString("nombreproducto",tv_titulohogar.text.toString().trim())
-        editor.putString("cantidadDisponible",tv_cantidaddisponibleHogar.text.toString().trim())
-        editor.putString("Valor",tv_intValorProd3.text.toString().trim())
-        editor.putString("CantidadProducto",Ethogarcantidad.text.toString().trim())
-        editor.apply()
-
-        Toast.makeText(requireContext(),"registro exitoso", Toast.LENGTH_LONG).show()
+        editorhogar.putString("nombreproducto",tv_titulohogar.text.toString().trim())
+        editorhogar.putString("cantidadDisponible",tv_cantidaddisponibleHogar.text.toString().trim())
+        editorhogar.putString("Valor",tv_intValorProd3.text.toString().trim())
+        editorhogar.putString("CantidadProducto",Ethogarcantidad.text.toString().trim())
+        if (Ethogarcantidad.text.toString().trim().isEmpty()) {
+        Toast.makeText(requireContext(), "indique la cantidad", Toast.LENGTH_SHORT).show()
+    }else{
+        editorhogar.apply()
+        Toast.makeText(requireContext(), getString(R.string.productos_agregado), Toast.LENGTH_LONG).show()
+    }
     }
     private fun guardardatosElectronica(){
-        val editor = sharedPreferences4.edit()
-        editor.putString("nombreproducto",tv_tituloElec.text.toString().trim())
-        editor.putString("cantidadDisponible",tv_cantidaddisponiblePortatil.text.toString().trim())
-        editor.putString("Valor",tv_intValorProd4.text.toString().trim())
-        editor.putString("CantidadProducto",Et_portatilcantidad.text.toString().trim())
-        editor.apply()
-        Toast.makeText(requireContext(),"registro exitoso", Toast.LENGTH_LONG).show()
-    }
+        val editortech = sharedPreferences4.edit()
+        editortech.putString("nombreproducto",tv_tituloElec.text.toString().trim())
+        editortech.putString("cantidadDisponible",tv_cantidaddisponiblePortatil.text.toString().trim())
+        editortech.putString("Valor",tv_intValorProd4.text.toString().trim())
+        editortech.putString("CantidadProducto",Et_portatilcantidad.text.toString().trim())
+        if (Et_portatilcantidad.text.toString().trim().isEmpty()) {
+        Toast.makeText(requireContext(), "indique la cantidad", Toast.LENGTH_SHORT).show()
+    }else{
+        editortech.apply()
+        Toast.makeText(requireContext(), getString(R.string.productos_agregado), Toast.LENGTH_LONG).show()
+    }}
 
     private fun guardardatosAccesorio(){
-        val editor = sharedPreferences5.edit()
-        editor.putString("nombreproducto",tv_tituloAccesorio.text.toString().trim())
-        editor.putString("cantidadDisponible",tv_cantidaddisponibleAccesorio.text.toString().trim())
-        editor.putString("Valor",tv_intValorProd5.text.toString().trim())
-        editor.putString("CantidadProducto",Et_accesoriocantidad.text.toString().trim())
-        editor.apply()
-        Toast.makeText(requireContext(),"registro exitoso", Toast.LENGTH_LONG).show()
+        val editoracces = sharedPreferences5.edit()
+        editoracces.putString("nombreproducto",tv_tituloAccesorio.text.toString().trim())
+        editoracces.putString("Valor",tv_intValorProd5.text.toString().trim())
+        editoracces.putString("CantidadProducto",Et_accesoriocantidad.text.toString().trim())
+
+        if (Et_accesoriocantidad.text.toString().trim().isEmpty()) {
+        Toast.makeText(requireContext(), "indique la cantidad", Toast.LENGTH_SHORT).show()
+    }else{
+        editoracces.apply()
+        Toast.makeText(requireContext(), getString(R.string.productos_agregado), Toast.LENGTH_LONG).show()
+    }
     }
 
 

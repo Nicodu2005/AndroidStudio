@@ -11,32 +11,42 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="284dp"
-            android:layout_height="190dp"
-            android:layout_marginStart="40sp"
-            app:srcCompat="@drawable/logo" />
-
-        <TextView
-            android:id="@+id/textTitulo"
+        <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="85sp"
-            android:layout_marginBottom="40sp"
-            android:fontFamily="@font/antic_didone"
-            android:text="Calcular viaje "
-            android:textColor="@color/blanco"
-            android:textSize="30sp" />
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="@color/azul"
+            android:gravity="center"
+            android:orientation ="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/logoMainMenu"
+                android:src="@drawable/logo"
+                android:paddingStart="5sp">
+            </ImageView>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/tituloMenu"
+                android:text="@string/logica"
+                android:textColor="@color/blanco"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:paddingStart="15dp"
+                android:textSize="30sp" />
+        </androidx.appcompat.widget.Toolbar>
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textVdestino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30sp"
             android:fontFamily="@font/antic_didone"
-            android:text="Indique el destino"
+            android:text="@string/indique_si_el_destino_nacional_o_internacional"
             android:textColor="@color/blanco"
             android:textSize="17sp" />
 
@@ -48,7 +58,7 @@
             android:layout_marginStart="30sp"
             android:layout_marginBottom="20sp"
             android:ems="10"
-            android:hint="destinos"
+            android:hint="@string/destinos"
             android:textColor="@color/negro"
             android:textSize="20sp" />
 
@@ -142,7 +152,7 @@
             android:text="RESULTADOS "
             android:textColor="@color/blanco"
             android:textSize="30sp" />
-
+<!--resultado-->
         <TextView
             android:id="@+id/TextCostoHospedaje"
             android:layout_width="match_parent"
@@ -162,7 +172,7 @@
             android:text="0"
             android:textColor="@color/blanco" />
 
-
+<!--segundoresultado-->
         <TextView
             android:id="@+id/TextcostoAlimentacion"
             android:layout_width="match_parent"
@@ -174,26 +184,26 @@
             android:textSize="17sp" />
 
         <TextView
-            android:id="@+id/costoTransporte"
+            android:id="@+id/costoactividades"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30sp"
             android:layout_marginBottom="15sp"
             android:text="0"
             android:textColor="@color/blanco" />
-
+<!--tercerresultado-->
         <TextView
-            android:id="@+id/textcostoActividades"
+            android:id="@+id/costoTransportetext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30sp"
             android:fontFamily="@font/antic_didone"
-            android:text="costo aproximado de hospedaje"
+            android:text="@string/costo_aproximado_de_Transporte"
             android:textColor="@color/blanco"
             android:textSize="17sp" />
 
         <TextView
-            android:id="@+id/costoActividades"
+            android:id="@+id/Costotransporte"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30sp"

@@ -9,65 +9,22 @@
         android:name="com.example.myapplication.fragments.InicioFragment"
         app:defaultNavHost="true"
         android:label="@string/inicioMenu"/>
-
-    <fragment
-        android:id="@+id/productosFragment"
-        android:name="com.example.myapplication.fragments.ProductosFragment"
-        app:defaultNavHost="true"
-        android:label="@string/productosMenu"/>
     <fragment
         android:id="@+id/perfilFragment"
         android:name="com.example.myapplication.fragments.PerfilFragment"
         app:defaultNavHost="true"
         android:label="@string/perfil_menu"/>
     <fragment
-        android:id="@+id/categoriasFragment"
-        android:name="com.example.myapplication.fragments.CategoriaFragment"
+        android:id="@+id/AnalisisFragmenet"
+        android:name="com.example.myapplication.fragments.parcial_mi_logica_fragment"
         app:defaultNavHost="true"
         android:label="@string/categoriaMenu"/>
-    <fragment
-        android:id="@+id/carritoFragment"
-        android:name="com.example.myapplication.fragments.CarritoFragment"
-        app:defaultNavHost="true"
-        android:label="@string/carritoMenu"/>
 
     <fragment
-        android:id="@+id/editarFragment"
-        android:name="com.example.myapplication.fragments.Editar_Fragment"
+        android:id="@+id/HistoricosFragment"
+        android:name="com.example.myapplication.fragments.HistoricoFragment"
         app:defaultNavHost="true"
-        android:label="editar Informacion"/>
-
-
-    <fragment
-        android:id="@+id/electronicaFragment"
-        android:name="com.example.myapplication.fragments.ElectronicaFragment"
-        app:defaultNavHost="true"
-        android:label="@string/ElectronicaProducts"/>
-
-    <fragment
-        android:id="@+id/ropaFragment"
-        android:name="com.example.myapplication.fragments.RopaFragment"
-        app:defaultNavHost="true"
-        android:label="@string/ropaProducts"/>
-
-    <fragment
-        android:id="@+id/deporFragment"
-        android:name="com.example.myapplication.fragments.DeportesFragment"
-        app:defaultNavHost="true"
-        android:label="@string/deportesProducts"/>
-
-    <fragment
-        android:id="@+id/AccesoriosFragment"
-        android:name="com.example.myapplication.fragments.AccesoriosFragment"
-        app:defaultNavHost="true"
-        android:label="@string/Categoria_Accesorios"/>
-
-    <fragment
-        android:id="@+id/HomeFragment"
-        android:name="com.example.myapplication.fragments.CasaFragment"
-        app:defaultNavHost="true"
-        android:label="@string/hogar"/>
-
+        android:label="@string/categoriaMenu"/>
 
 
 

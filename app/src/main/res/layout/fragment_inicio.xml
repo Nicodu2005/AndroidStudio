@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/bowlby_one"
         android:gravity="center"
-        android:text="@string/nombre_App"
+        android:text="@string/parcial_segundo_momento"
         android:textColor="@color/blanco"
         android:textSize="40sp"
         android:layout_gravity="center"
@@ -34,21 +34,5 @@
             android:textSize="20sp"
             android:layout_gravity="center"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="30sp"
-        android:text="@string/Textinfo_Inicio"
-        android:textColor="@color/blanco"
-        android:textSize="20sp" />
 
-        <Button
-            style="@style/edit_iniciar"
-            android:layout_width="300sp"
-            android:layout_height="wrap_content"
-            android:text="@string/boton_fragInicio"
-            android:textSize="20sp"
-            app:backgroundTint="@null"
-            android:layout_marginTop="20sp"
-            android:layout_gravity="center"/>
 </LinearLayout>

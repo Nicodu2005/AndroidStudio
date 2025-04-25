@@ -36,9 +36,8 @@
         <activity android:name=".activities.RcontrasenaActivity"
             android:exported="false">
         </activity>
-        <activity android:name=".activities.PerfilActivity"
-            android:exported="false">
-        </activity>
+
+
 
 
         <meta-data

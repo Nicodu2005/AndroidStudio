@@ -18,12 +18,15 @@ class PerfilFragment:Fragment() {
 
     private lateinit var getTextNombres: String
     private lateinit var getTextApellido: String
-    private lateinit var getTextTelefono: String
+    private lateinit var getTextsemestre: String
+    private lateinit var getTextPrograma: String
     private lateinit var getTextCorreo: String
     private lateinit var TextNombres: TextView
     private lateinit var TextApellido: TextView
     private lateinit var TextCorreo: TextView
-    private lateinit var TextTelefono: TextView
+    private lateinit var TextPrograma: TextView
+    private lateinit var TextSemestre: TextView
+
     private lateinit var sharedPreference: SharedPreferences
 
      override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?):
@@ -33,14 +36,12 @@ class PerfilFragment:Fragment() {
          TextNombres = view.findViewById(R.id.nombres_perfil)
          TextApellido = view.findViewById(R.id.apellido_perfil)
          TextCorreo = view.findViewById(R.id.correo_perfil)
-         TextTelefono = view.findViewById(R.id.telefono_perfil)
+         TextPrograma = view.findViewById(R.id.programa_user)
+         TextSemestre = view.findViewById(R.id.semestre_perfil)
 
          ObtenerDatos()
-            btneditar=view.findViewById(R.id.BtnEditarInfo)
 
-            btneditar.setOnClickListener{
-                findNavController().navigate(R.id.editarFragment)
-            }
+
             return view
         }
     private fun ObtenerDatos() {
@@ -49,13 +50,15 @@ class PerfilFragment:Fragment() {
         getTextNombres = sharedPreference.getString("nombres", "Username") ?: "username";
         getTextApellido = sharedPreference.getString("apellidos", "Userlastname") ?: "Userlastname";
         getTextCorreo = sharedPreference.getString("correo", "Useremail") ?: "Useremail";
-        getTextTelefono = sharedPreference.getString("telefono", "Usertelefono") ?: "Usertelefono";
+        getTextsemestre = sharedPreference.getString("semestre", "Usersemestre") ?: "Usersemestre";
+        getTextPrograma = sharedPreference.getString("programa", "Userprograma") ?: "Userprograma";
 
 
         TextNombres.setText(getTextNombres)
         TextApellido.setText(getTextApellido)
         TextCorreo.setText(getTextCorreo)
-        TextTelefono.setText(getTextTelefono)
+        TextPrograma.setText(getTextPrograma)
+        TextSemestre.setText(getTextsemestre)
 
     }
 
